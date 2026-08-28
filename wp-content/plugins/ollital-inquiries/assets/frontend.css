@@ -1,0 +1,11 @@
+.ollital-inquiry-trap {
+	position: absolute !important;
+	left: -10000px !important;
+	width: 1px !important;
+	height: 1px !important;
+	overflow: hidden !important;
+}
+
+.me-form-status.is-sending { color: #526b75; }
+.me-form-status.is-success { padding: 14px 16px; border-left: 3px solid #008b95; color: #075f66; background: #edfafa; }
+.me-form-status.is-error { padding: 14px 16px; border-left: 3px solid #b42318; color: #8f1d16; background: #fff3f2; }
