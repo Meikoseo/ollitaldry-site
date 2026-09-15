@@ -3,6 +3,8 @@
 
   if (!window.ollitalInquiries) return;
 
+  preparePublicIp();
+
   document.addEventListener('ollitaldry:material-evaluation-submit', function (event) {
     var detail = event.detail || {};
     var form = detail.form;
@@ -26,7 +28,11 @@
       status.textContent = window.ollitalInquiries.sending;
     }
 
-    refreshSecurityToken(form, data).then(function () {
+    publicIpReady().then(function () {
+      var ipField = form.querySelector('[data-ollital-client-ip]');
+      if (ipField && ipField.value) data.set('client_public_ip', ipField.value);
+      return refreshSecurityToken(form, data);
+    }).then(function () {
       return fetch(window.ollitalInquiries.ajaxUrl, {
       method: 'POST',
       credentials: 'same-origin',
@@ -73,6 +79,42 @@
       }
     });
   });
+
+  function preparePublicIp() {
+    var fields = document.querySelectorAll('[data-ollital-client-ip]');
+    if (!fields.length) return;
+    if (window.ollitalPublicIpPromise) return;
+
+    function requestIp(url) {
+      return fetch(url, {
+        method: 'GET',
+        mode: 'cors',
+        cache: 'no-store',
+        referrerPolicy: 'no-referrer'
+      }).then(function (response) {
+        if (!response.ok) throw new Error('Public IP lookup failed.');
+        return response.json();
+      }).then(function (result) {
+        var ip = result && typeof result.ip === 'string' ? result.ip.trim() : '';
+        if (!ip || (!/^\d{1,3}(?:\.\d{1,3}){3}$/.test(ip) && ip.indexOf(':') === -1)) {
+          throw new Error('Public IP response was invalid.');
+        }
+        return ip;
+      });
+    }
+
+    window.ollitalPublicIpPromise = requestIp('https://api64.ipify.org?format=json')
+      .catch(function () { return requestIp('https://api.ipify.org?format=json'); })
+      .then(function (ip) {
+        fields.forEach(function (field) { field.value = ip; });
+        return ip;
+      })
+      .catch(function () { return ''; });
+  }
+
+  function publicIpReady() {
+    return window.ollitalPublicIpPromise || Promise.resolve('');
+  }
 
   function refreshSecurityToken(form, submissionData) {
     var request = new FormData();

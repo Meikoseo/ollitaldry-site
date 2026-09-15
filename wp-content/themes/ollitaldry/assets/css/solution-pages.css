@@ -1,11 +1,11 @@
-.ollitaldry-solution-page{--sp-deep:#031e31;--sp-navy:#062a43;--sp-teal:#008f98;--sp-line:#d8e3e8;--sp-soft:#f4f8f9;color:var(--body);background:#fff;overflow-x:hidden}.ollitaldry-solution-page .site-header:not(.is-scrolled){background:var(--sp-deep)}.solution-page .container-wide{width:min(100% - 64px,1320px)}.solution-section{padding:34px 0}.solution-section--tight{padding:24px 0}.solution-section--tint{background:var(--sp-soft)}.solution-eyebrow{margin:0 0 7px;color:var(--sp-teal);font-size:10px;font-weight:800;letter-spacing:0;text-transform:uppercase}.solution-heading{max-width:760px;margin:0 auto 24px;text-align:center}.solution-heading--left{max-width:none;margin-inline:0;text-align:left}.solution-heading h2{margin:0;color:var(--navy-950);font-size:28px;line-height:1.18}.solution-heading p{margin:7px 0 0;color:var(--muted);font-size:13px}.solution-note{margin:10px 0 0;color:var(--muted);font-size:10px}
+.ollitaldry-solution-page{--sp-deep:#031e31;--sp-navy:#062a43;--sp-teal:#008f98;--sp-line:#d8e3e8;--sp-soft:#f4f8f9;color:var(--body);background:#fff;overflow-x:hidden}.solution-page .container-wide{width:min(100% - 64px,1320px)}.solution-section{padding:34px 0}.solution-section--tight{padding:24px 0}.solution-section--tint{background:var(--sp-soft)}.solution-eyebrow{margin:0 0 7px;color:var(--sp-teal);font-size:10px;font-weight:800;letter-spacing:0;text-transform:uppercase}.solution-heading{max-width:760px;margin:0 auto 24px;text-align:center}.solution-heading--left{max-width:none;margin-inline:0;text-align:left}.solution-heading h2{margin:0;color:var(--navy-950);font-size:28px;line-height:1.18}.solution-heading p{margin:7px 0 0;color:var(--muted);font-size:13px}.solution-note{margin:10px 0 0;color:var(--muted);font-size:10px}
 .solution-hero{position:relative;height:650px;color:#fff;background-color:var(--sp-deep);background-image:var(--solution-hero-image);background-position:center;background-size:cover;overflow:hidden}.solution-hero:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(2,20,34,.34),transparent 52%);pointer-events:none}.solution-hero__inner{position:relative;z-index:1;height:100%;display:grid;grid-template-rows:auto 1fr auto;padding-top:calc(var(--header-height) + 16px);padding-bottom:30px}.solution-breadcrumb{display:flex;align-items:center;gap:9px;color:rgba(255,255,255,.65);font-size:11px}.solution-breadcrumb a{color:rgba(255,255,255,.75)}.solution-breadcrumb strong{font-weight:500}.solution-hero__copy{width:min(590px,45%);align-self:center}.solution-hero__copy h1{margin:0 0 10px;color:#fff;font-size:52px;line-height:1.02}.solution-hero__copy h2{margin:0 0 14px;color:#fff;font-size:17px;line-height:1.35}.solution-hero__text{max-width:550px;margin:0 0 24px;color:rgba(255,255,255,.82);font-size:14px;line-height:1.65}.solution-hero .solution-eyebrow{color:#59dbe0}.solution-hero__facts{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;max-width:790px;background:rgba(255,255,255,.16);border:1px solid rgba(255,255,255,.16);border-radius:7px;overflow:hidden;backdrop-filter:blur(9px)}.solution-hero__facts>div{min-height:68px;display:flex;align-items:center;gap:10px;padding:12px 15px;background:rgba(2,28,45,.56)}.solution-hero__facts span{display:grid;place-items:center;color:#50d2d7}.solution-hero__facts .icon{width:21px;height:21px}.solution-hero__facts strong{font-size:10px;line-height:1.35}.solution-section--overlap{position:relative;z-index:2;margin-top:-30px;padding-top:0}
 .solution-icon-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));background:#fff;border:1px solid var(--sp-line);border-radius:7px;overflow:hidden}.solution-icon-grid--five{grid-template-columns:repeat(5,minmax(0,1fr))}.solution-icon-grid--six{grid-template-columns:repeat(6,minmax(0,1fr))}.solution-icon-card{min-height:160px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:20px 15px;text-align:center}.solution-icon-card+article{border-left:1px solid var(--sp-line)}.solution-icon-card>span{width:48px;height:48px;display:grid;place-items:center;margin-bottom:12px;color:var(--sp-teal);background:#edf8f8;border-radius:50%}.solution-icon-card .icon{width:25px;height:25px}.solution-icon-card h3{margin:0 0 7px;color:var(--navy-950);font-size:12px}.solution-icon-card p{margin:0;color:var(--muted);font-size:10px;line-height:1.48}
 .solution-feature-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.solution-feature-grid--three{grid-template-columns:repeat(3,minmax(0,1fr))}.solution-feature-card{min-height:118px;display:flex;align-items:center;gap:17px;padding:20px;background:#fff;border:1px solid var(--sp-line);border-radius:7px}.solution-feature-card>span{width:50px;height:50px;flex:0 0 50px;display:grid;place-items:center;color:var(--sp-teal)}.solution-feature-card .icon{width:32px;height:32px}.solution-feature-card h3{margin:0 0 6px;color:var(--navy-950);font-size:13px}.solution-feature-card p{margin:0;color:var(--muted);font-size:10px;line-height:1.5}
-.solution-versus{position:relative;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;color:#fff;background:var(--sp-deep);border-radius:8px}.solution-versus__side{min-height:280px;padding:34px 52px;background-position:center;background-size:cover}.solution-versus__side--problem{background-image:linear-gradient(90deg,rgba(4,27,41,.92),rgba(4,27,41,.54)),url('https://meikoseo.github.io/ollitaldry-site/wp-content/themes/ollitaldry/assets/images/lab-process-drying.webp')}.solution-versus__side--answer{background-image:linear-gradient(90deg,rgba(0,103,115,.83),rgba(0,103,115,.94)),url('https://meikoseo.github.io/ollitaldry-site/wp-content/themes/ollitaldry/assets/images/lab-process-collection.webp')}.solution-versus h2{margin:0 0 16px;color:#fff;font-size:23px}.solution-versus ul,.solution-split-row ul,.solution-inerting ul,.solution-partner ul,.solution-analysis ul,.solution-standard-list ul{display:grid;gap:8px;margin:0;padding:0;list-style:none}.solution-versus li,.solution-split-row li,.solution-inerting li,.solution-partner li,.solution-analysis li,.solution-standard-list li{position:relative;padding-left:18px;font-size:11px}.solution-versus li:before,.solution-split-row li:before,.solution-inerting li:before,.solution-partner li:before,.solution-analysis li:before,.solution-standard-list li:before{content:"";position:absolute;left:0;top:.38em;width:9px;height:5px;border-left:2px solid #27c4ca;border-bottom:2px solid #27c4ca;transform:rotate(-45deg)}.solution-versus__badge{position:absolute;z-index:2;top:50%;left:50%;width:66px;height:66px;display:grid;place-items:center;color:var(--navy-950);background:#fff;border-radius:50%;font-size:17px;font-weight:800;transform:translate(-50%,-50%)}
+.solution-versus{position:relative;display:grid;grid-template-columns:1fr 1fr;overflow:hidden;color:#fff;background:var(--sp-deep);border-radius:8px}.solution-versus__side{min-height:280px;padding:34px 52px;background-position:center;background-size:cover}.solution-versus__side--problem{background-image:linear-gradient(90deg,rgba(4,27,41,.92),rgba(4,27,41,.54)),url('../images/lab-process-drying.webp')}.solution-versus__side--answer{background-image:linear-gradient(90deg,rgba(0,103,115,.83),rgba(0,103,115,.94)),url('../images/lab-process-collection.webp')}.solution-versus h2{margin:0 0 16px;color:#fff;font-size:23px}.solution-versus ul,.solution-split-row ul,.solution-inerting ul,.solution-partner ul,.solution-analysis ul,.solution-standard-list ul{display:grid;gap:8px;margin:0;padding:0;list-style:none}.solution-versus li,.solution-split-row li,.solution-inerting li,.solution-partner li,.solution-analysis li,.solution-standard-list li{position:relative;padding-left:18px;font-size:11px}.solution-versus li:before,.solution-split-row li:before,.solution-inerting li:before,.solution-partner li:before,.solution-analysis li:before,.solution-standard-list li:before{content:"";position:absolute;left:0;top:.38em;width:9px;height:5px;border-left:2px solid #27c4ca;border-bottom:2px solid #27c4ca;transform:rotate(-45deg)}.solution-versus__badge{position:absolute;z-index:2;top:50%;left:50%;width:66px;height:66px;display:grid;place-items:center;color:var(--navy-950);background:#fff;border-radius:50%;font-size:17px;font-weight:800;transform:translate(-50%,-50%)}
 .solution-media-grid{display:grid;gap:12px}.solution-media-grid--three{grid-template-columns:repeat(3,minmax(0,1fr))}.solution-media-grid--four{grid-template-columns:repeat(4,minmax(0,1fr))}.solution-media-card{overflow:hidden;background:#fff;border:1px solid var(--sp-line);border-radius:7px}.solution-media-card img{width:100%;height:180px;display:block;object-fit:cover}.solution-media-card>div{padding:15px}.solution-media-card h3{margin:0 0 5px;color:var(--navy-950);font-size:14px}.solution-media-card p{margin:0;color:var(--muted);font-size:10px;line-height:1.45}.solution-media-strip{display:grid;grid-template-columns:repeat(5,1fr);overflow:hidden;background:#fff;border:1px solid var(--sp-line);border-radius:8px;box-shadow:0 18px 40px rgba(4,36,55,.12)}.solution-media-strip article{min-height:130px;display:grid;grid-template-columns:100px 1fr;align-items:center;padding:14px}.solution-media-strip article+article{border-left:1px solid var(--sp-line)}.solution-media-strip img{width:86px;height:86px;object-fit:cover;border-radius:50%}.solution-media-strip h3{margin:0;color:var(--navy-950);font-size:12px}
 .solution-steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));overflow:hidden;background:#fff;border:1px solid var(--sp-line);border-radius:7px}.solution-steps--six{grid-template-columns:repeat(6,minmax(0,1fr))}.solution-steps article{position:relative;min-height:170px;padding:22px;text-align:center}.solution-steps article+article{border-left:1px solid var(--sp-line)}.solution-steps article:not(:last-child):after{content:"›";position:absolute;right:-8px;top:43px;z-index:2;color:#8ca7b4;background:#fff;font-size:25px}.solution-steps span{width:30px;height:30px;display:grid;place-items:center;margin:0 auto 12px;color:#fff;background:var(--sp-teal);border-radius:50%;font-size:11px;font-weight:800}.solution-steps h3{margin:0 0 7px;color:var(--navy-950);font-size:12px}.solution-steps p{margin:0;color:var(--muted);font-size:9px;line-height:1.5}
-.solution-cta{min-height:170px;display:flex;align-items:center;justify-content:space-between;gap:28px;margin-top:28px;padding:30px 38px;color:#fff;background:linear-gradient(100deg,var(--sp-deep),#075f73);border-radius:8px;overflow:hidden}.solution-cta h2{margin:0 0 7px;color:#fff;font-size:25px}.solution-cta p{max-width:680px;margin:0;color:rgba(255,255,255,.75);font-size:11px}.solution-cta--image{min-height:260px;padding-left:44%;background-image:linear-gradient(90deg,transparent 0 34%,var(--sp-deep) 47% 100%),var(--cta-image);background-position:left center;background-size:cover}.solution-cta ul{display:grid;gap:10px;margin:0;padding:0;list-style:none;font-size:10px}.solution-cta li:before{content:"✓";margin-right:8px;color:#50d7dd}.solution-cta--powder{background-image:linear-gradient(90deg,rgba(3,30,49,.98),rgba(3,42,64,.78)),url('https://meikoseo.github.io/ollitaldry-site/wp-content/themes/ollitaldry/assets/images/application-materials/solution-ceramic-powder.webp');background-position:center;background-size:cover}
+.solution-cta{min-height:170px;display:flex;align-items:center;justify-content:space-between;gap:28px;margin-top:28px;padding:30px 38px;color:#fff;background:linear-gradient(100deg,var(--sp-deep),#075f73);border-radius:8px;overflow:hidden}.solution-cta h2{margin:0 0 7px;color:#fff;font-size:25px}.solution-cta p{max-width:680px;margin:0;color:rgba(255,255,255,.75);font-size:11px}.solution-cta--image{min-height:260px;padding-left:44%;background-image:linear-gradient(90deg,transparent 0 34%,var(--sp-deep) 47% 100%),var(--cta-image);background-position:left center;background-size:cover}.solution-cta ul{display:grid;gap:10px;margin:0;padding:0;list-style:none;font-size:10px}.solution-cta li:before{content:"✓";margin-right:8px;color:#50d7dd}.solution-cta--powder{background-image:linear-gradient(90deg,rgba(3,30,49,.98),rgba(3,42,64,.78)),url('../images/application-materials/solution-ceramic-powder.webp');background-position:center;background-size:cover}
 .solution-result-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.solution-result-grid--five{grid-template-columns:repeat(5,minmax(0,1fr))}.solution-result-grid article{min-height:130px;display:flex;align-items:center;gap:15px;padding:14px;background:#fff;border:1px solid var(--sp-line);border-radius:7px}.solution-result-grid img{width:115px;height:100px;object-fit:cover;border-radius:5px}.solution-result-grid strong{display:block;color:var(--sp-teal);font-size:24px}.solution-result-grid span{display:block;color:var(--muted);font-size:10px}.solution-result-card{display:block!important;text-align:left}.solution-result-card>span{width:34px;height:34px;display:grid;place-items:center;color:var(--sp-teal);background:#edf8f8;border-radius:50%}.solution-result-card .icon{width:18px;height:18px}.solution-result-card h3{margin:9px 0 13px;font-size:12px}.solution-result-card p{font-size:10px}
 .solution-control{display:grid;grid-template-columns:1fr 1.1fr 250px;gap:20px;align-items:center}.solution-control>div:first-child h3{margin:13px 0 4px;color:var(--navy-950);font-size:13px}.solution-control>div:first-child p{margin:0;color:var(--muted);font-size:10px}.solution-control__diagram{min-height:300px;display:grid;place-items:center}.solution-control__spray{position:absolute;color:var(--sp-teal)}.solution-control__spray .icon{width:60px;height:60px}.solution-control__chamber{width:220px;min-height:275px;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;padding:25px;color:#fff;background:linear-gradient(#7ca2ae,var(--sp-navy));clip-path:polygon(12% 0,88% 0,100% 72%,64% 100%,36% 100%,0 72%)}.solution-control__chamber strong{font-size:13px}.solution-control__chamber span{font-size:10px}.solution-control aside{padding:22px;background:#fff;border:1px solid var(--sp-line);border-radius:7px}.solution-control dl{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin:0;font-size:10px}.solution-control dt{font-weight:700}.solution-control dd{margin:0;color:var(--muted)}
 .solution-comparison-layout{display:grid;grid-template-columns:minmax(0,1.6fr) minmax(260px,.7fr);gap:16px}.solution-table-wrap{overflow:auto}.solution-table{width:100%;border-collapse:collapse;background:#fff;font-size:10px}.solution-table th,.solution-table td{padding:10px 12px;border:1px solid var(--sp-line);text-align:left}.solution-table thead th{color:var(--navy-950);background:#edf2f4}.solution-table tbody th{color:var(--navy-950)}.solution-table td{color:#4d6574}.solution-stat-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.solution-stat-grid article{min-height:110px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:15px;text-align:center;background:#fff;border:1px solid var(--sp-line);border-radius:7px}.solution-stat-grid strong{color:var(--sp-teal);font-size:28px}.solution-stat-grid span{color:var(--muted);font-size:9px;line-height:1.4}.solution-standard-list{padding:24px;background:#fff;border:1px solid var(--sp-line);border-radius:7px}.solution-standard-list h2{margin:0 0 15px;font-size:20px}.solution-standard-list li{margin-bottom:10px;color:var(--navy-950)}
@@ -19,7 +19,8 @@
 @media (prefers-reduced-motion:reduce){.solution-page *{scroll-behavior:auto!important;transition-duration:.01ms!important}}
 
 /* Sticky materials: reference-led page composition. */
-.ollitaldry-solution-sticky-material-spray-drying .solution-hero{background-position:center}
+.solution-breadcrumb strong[aria-current="page"]{color:#d7e5ec;font-size:inherit;font-weight:700}
+.ollitaldry-solution-sticky-material-spray-drying .solution-hero{background-image:linear-gradient(90deg,var(--sp-deep) 0,rgba(3,30,49,.98) 22%,rgba(3,30,49,.42) 54%,rgba(3,30,49,0) 72%),var(--solution-hero-image);background-position:center,right center;background-size:cover,auto 100%;background-repeat:no-repeat}
 .ollitaldry-solution-sticky-material-spray-drying .solution-hero:after{background:linear-gradient(90deg,rgba(2,20,34,.88) 0,rgba(2,20,34,.6) 30%,rgba(2,20,34,.16) 58%,rgba(2,20,34,.02) 100%)}
 .ollitaldry-solution-sticky-material-spray-drying .solution-hero__copy{width:min(610px,43%)}
 .ollitaldry-solution-sticky-material-spray-drying .solution-hero__copy>.solution-eyebrow{display:none}
@@ -74,8 +75,11 @@
 .sticky-test__features strong{color:#fff;font-size:10px;line-height:1.35}
 .sticky-results{padding-top:10px!important}
 .sticky-results__grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
-.sticky-results__grid article{min-height:212px;display:grid;grid-template-columns:34% 1fr;overflow:hidden;background:#fff;border:1px solid var(--sp-line);border-radius:7px}
+.sticky-results__grid article{position:relative;min-height:212px;display:grid;grid-template-columns:34% 1fr;overflow:hidden;background:#fff;border:1px solid var(--sp-line);border-radius:7px;transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}
 .sticky-results__grid article>img{width:100%;height:100%;display:block;object-fit:cover}
+.sticky-results__grid article:hover{border-color:#8ecbd0;box-shadow:0 14px 32px rgba(3,42,67,.12);transform:translateY(-2px)}
+.sticky-results__card-action{position:absolute;z-index:2;inset:0;width:100%;height:100%;padding:0;border:0;background:transparent;cursor:pointer}
+.sticky-results__card-action:focus-visible{outline:3px solid var(--sp-teal);outline-offset:-3px}
 .sticky-results__body{display:flex;flex-direction:column;justify-content:center;padding:15px}
 .sticky-results__body>span{align-self:flex-start;padding:2px 7px;color:var(--sp-teal);background:#eef8f8;border:1px solid #bfe1e3;border-radius:999px;font-size:8px;font-weight:700}
 .sticky-results__body h3{margin:7px 0 5px;color:var(--navy-950);font-size:14px}
@@ -84,11 +88,54 @@
 .sticky-results__metrics strong,.sticky-results__metrics small{display:block}
 .sticky-results__metrics strong{color:var(--sp-teal);font-size:23px;line-height:1}
 .sticky-results__metrics small{margin-top:4px;color:var(--muted);font-size:8px;line-height:1.25}
-.sticky-results__link{display:flex;align-items:center;justify-content:center;gap:7px;width:max-content;margin:12px auto 0;color:var(--sp-teal);font-size:10px;font-weight:700}
-.sticky-results__link .icon{width:15px;height:15px}
+.sticky-results__link{display:flex;align-items:center;justify-content:center;gap:8px;width:max-content;margin:18px auto 0;color:var(--sp-teal);font-size:14px;font-weight:750}
+.sticky-results__link .icon{width:18px;height:18px}
+.sticky-result-dialog{width:min(1180px,calc(100% - 48px));max-width:none;max-height:calc(100dvh - 48px);margin:auto;padding:0;overflow:hidden;border:0;border-radius:8px;color:var(--navy-950);background:#fff;box-shadow:0 30px 90px rgba(0,21,36,.36)}
+.sticky-result-dialog::backdrop{background:rgba(2,23,37,.8);backdrop-filter:blur(5px)}
+.sticky-result-dialog__panel{display:grid;grid-template-columns:minmax(0,.92fr) minmax(440px,1.08fr);height:min(720px,calc(100dvh - 48px))}
+.sticky-result-dialog__media{display:grid;min-width:0;place-items:center;padding:24px;background:#f3f7f8}
+.sticky-result-dialog__media img{display:block;width:100%;height:100%;object-fit:contain}
+.sticky-result-dialog__content{min-width:0;padding:48px 44px 38px;overflow-y:auto}
+.sticky-result-dialog__content>span{align-self:flex-start;padding:5px 9px;border:1px solid #bfe1e3;border-radius:999px;color:var(--sp-teal);background:#eef8f8;font-size:11px;font-weight:750}
+.sticky-result-dialog__content h2{margin:14px 0 7px;font-size:30px;line-height:1.2}
+.sticky-result-dialog__lead{margin:0;color:var(--sp-teal);font-size:14px;font-weight:700;line-height:1.5}
+.sticky-result-dialog__details{display:grid;gap:19px;margin-top:25px}
+.sticky-result-dialog__details section{margin:0;padding:0;border:0}
+.sticky-result-dialog__details h3{margin:0 0 7px;color:var(--navy-950);font-size:15px}
+.sticky-result-dialog__details p{margin:0;color:var(--muted);font-size:13px;line-height:1.62}
+.sticky-result-dialog__details ul{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.sticky-result-dialog__details li{display:flex;align-items:flex-start;gap:8px;color:var(--muted);font-size:13px;line-height:1.52}
+.sticky-result-dialog__details li .icon{width:17px;height:17px;flex:0 0 17px;margin-top:2px;color:var(--sp-teal)}
+.sticky-result-dialog__metrics{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:25px;padding-top:20px;border-top:1px solid var(--sp-line)}
+.sticky-result-dialog__metrics strong,.sticky-result-dialog__metrics small{display:block}
+.sticky-result-dialog__metrics strong{color:var(--sp-teal);font-size:30px;line-height:1}
+.sticky-result-dialog__metrics small{margin-top:7px;color:var(--muted);font-size:11px;line-height:1.3}
+.sticky-result-dialog__note{margin:18px 0 0;color:#7a8d99;font-size:10px;line-height:1.45}
+.sticky-result-dialog__close{position:absolute;z-index:2;top:14px;right:14px;display:grid;width:40px;height:40px;padding:0;place-items:center;border:1px solid var(--sp-line);border-radius:50%;color:var(--navy-950);background:rgba(255,255,255,.96);cursor:pointer}
+.sticky-result-dialog__close .icon{width:20px;height:20px}
+body.sticky-result-dialog-open{overflow:hidden}
 .ollitaldry-solution-sticky-material-spray-drying .solution-faq{padding-top:15px}
 .ollitaldry-solution-sticky-material-spray-drying .ollital-faq__heading{margin-bottom:10px;text-align:left}
 
+@media (min-width:721px){
+	.sticky-versus{min-height:400px}
+	.sticky-versus .solution-versus__side{min-height:400px}
+	.sticky-versus h2{font-size:24px}
+	.sticky-versus li{font-size:16px}
+	.sticky-versus .solution-versus__side--answer h2,
+	.sticky-versus .solution-versus__side--answer ul{width:min(100%,330px);min-width:0}
+}
+
+/* Solvent safety refinements. */
+.ollitaldry-solution-organic-solvent-drying .solvent-ex-mark{width:52px;height:46px;display:grid;flex:0 0 52px;place-items:center;color:#171300;background:#f2c343;clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);font-family:Georgia,serif;font-size:19px;font-weight:800;line-height:1;filter:drop-shadow(0 0 1px #111)}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-caption{gap:7px}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-checklist{order:0;margin:0 0 18px}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-caption>strong{order:1}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-caption>span{order:2}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-features article{display:flex;align-items:center;min-height:132px}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-features article>div{display:flex;align-self:stretch;flex-direction:column;justify-content:center}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-features h3{font-size:14px}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-features p{font-size:12px;line-height:1.5}
 @media (min-width:1600px){
 	.ollitaldry-solution-sticky-material-spray-drying .solution-hero__copy{width:min(700px,42%)}
 	.sticky-challenges .solution-icon-card{min-height:225px}
@@ -102,7 +149,7 @@
 	.sticky-test__features strong{font-size:13px}
 	.sticky-results__body h3{font-size:17px}
 	.sticky-results__body p{font-size:12px}
-	.sticky-results__body>span,.sticky-results__metrics small,.sticky-results__link{font-size:10px}
+	.sticky-results__body>span,.sticky-results__metrics small{font-size:10px}
 }
 
 @media (max-width:1199px){
@@ -112,8 +159,9 @@
 }
 
 @media (max-width:720px){
-	.ollitaldry-solution-sticky-material-spray-drying .solution-hero{height:700px;background-position:68% center}
-	.ollitaldry-solution-sticky-material-spray-drying .solution-hero:before{background:linear-gradient(90deg,rgba(3,30,49,.98) 0 42%,rgba(3,30,49,.5) 100%)}
+	.ollitaldry-solution-sticky-material-spray-drying .solution-hero{height:700px;background-image:linear-gradient(90deg,rgba(3,30,49,.58),rgba(3,30,49,.04)),var(--solution-hero-image);background-position:center,72% top;background-size:cover,auto 60%}
+	.ollitaldry-solution-sticky-material-spray-drying .solution-hero:before{background:linear-gradient(180deg,rgba(3,30,49,.04) 0 27%,rgba(3,30,49,.74) 46%,rgba(3,30,49,.98) 69%)}
+	.ollitaldry-solution-sticky-material-spray-drying .solution-hero:after{background:none}
 	.ollitaldry-solution-sticky-material-spray-drying .solution-hero__copy{width:92%}
 	.ollitaldry-solution-sticky-material-spray-drying .solution-hero__facts{grid-template-columns:1fr 1fr}
 	.ollitaldry-solution-sticky-material-spray-drying .solution-hero__facts>div{padding-right:8px}
@@ -142,6 +190,510 @@
 	.sticky-test__features{width:100%;padding:18px 18px 23px}
 	.sticky-results__grid{grid-template-columns:1fr}
 	.sticky-results__grid article{min-height:190px;grid-template-columns:35% 1fr}
+	.sticky-results__link{font-size:13px}
+	.sticky-result-dialog{width:calc(100% - 24px);max-height:calc(100dvh - 24px);overflow:auto}
+	.sticky-result-dialog__panel{display:block;height:auto;min-height:0}
+	.sticky-result-dialog__media{height:280px;padding:14px}
+	.sticky-result-dialog__content{padding:28px 22px 30px}
+	.sticky-result-dialog__content h2{font-size:25px}
+}
+
+/* Organic-solvent drying: closed-loop process, hazard controls and recovery train. */
+.ollitaldry-solution-organic-solvent-drying .solvent-process-section,
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-section,
+.ollitaldry-solution-organic-solvent-drying .solvent-recovery-section,
+.ollitaldry-solution-organic-solvent-drying .solvent-inerting-section,
+.ollitaldry-solution-organic-solvent-drying .solvent-use-section,
+.ollitaldry-solution-organic-solvent-drying .solvent-partner-section,
+.ollitaldry-solution-organic-solvent-drying .solvent-engineering-section,
+.ollitaldry-solution-organic-solvent-drying .solvent-utilities-section,
+.ollitaldry-solution-organic-solvent-drying .solvent-cases-section{padding-top:28px;padding-bottom:28px;background:#fff}
+.ollitaldry-solution-organic-solvent-drying .solution-heading{margin-bottom:19px}
+.ollitaldry-solution-organic-solvent-drying .solution-heading h2,
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-content>h2,
+.ollitaldry-solution-organic-solvent-drying .solvent-recovery-copy h2,
+.ollitaldry-solution-organic-solvent-drying .solvent-inerting-copy h2,
+.ollitaldry-solution-organic-solvent-drying .solvent-list h2,
+.ollitaldry-solution-organic-solvent-drying .solvent-applications-content>h2,
+.ollitaldry-solution-organic-solvent-drying .solvent-partner-panel h2,
+.ollitaldry-solution-organic-solvent-drying .solvent-utilities-panel h2{margin:0;color:var(--navy-950);font-size:25px;line-height:1.22}
+.ollitaldry-solution-organic-solvent-drying .solution-heading p{font-size:13px;line-height:1.55}
+.ollitaldry-solution-organic-solvent-drying .solution-eyebrow{font-size:11px}
+.ollitaldry-solution-organic-solvent-drying .solution-note{font-size:11px;line-height:1.55}
+
+.ollitaldry-solution-organic-solvent-drying .solvent-process-flow{position:relative;display:grid;grid-template-columns:repeat(8,minmax(0,1fr));padding:10px 5px 55px;border-top:1px solid #d6e3e8;border-bottom:1px solid #d6e3e8}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-flow article{position:relative;min-height:165px;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding:15px 10px;text-align:center}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-flow article>span{width:70px;height:70px;display:grid;place-items:center;color:#087f8d;background:#f2f9f9;border:1px solid #b8d7dc;border-radius:50%}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-flow .icon{width:42px;height:42px;stroke-width:1.45}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-flow h3{min-height:35px;margin:12px 0 5px;color:var(--navy-950);font-size:13px;line-height:1.32}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-flow p{margin:0;color:#627985;font-size:11px;line-height:1.42}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-flow article>b{position:absolute;top:42px;right:-10px;z-index:2;color:#5e8797;font-size:25px;font-weight:400}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-return{position:absolute;right:6.5%;bottom:12px;left:6.5%;height:25px;border:1px solid #74b8c0;border-top:0}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-return:before{content:"";position:absolute;top:-5px;left:-4px;width:8px;height:8px;border-left:2px solid #74b8c0;border-bottom:2px solid #74b8c0;transform:rotate(45deg)}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-return span{position:absolute;left:50%;bottom:-6px;padding:0 15px;color:#087f8d;background:#fff;font-size:11px;font-weight:700;white-space:nowrap;transform:translateX(-50%)}
+
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-section{background:#f5f8f9}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-grid{display:grid;grid-template-columns:minmax(330px,.72fr) minmax(0,1.5fr);overflow:hidden;background:#fff;border:1px solid #d6e3e8;border-radius:8px}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-visual{position:relative;min-height:430px;display:flex;flex-direction:column;justify-content:space-between;padding:25px;color:#fff;background-image:linear-gradient(180deg,rgba(2,24,39,.08),rgba(2,24,39,.9)),var(--safety-image);background-position:center;background-size:cover}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-badge{width:min(245px,100%);display:flex;align-items:center;gap:12px;padding:12px 14px;background:rgba(3,30,49,.88);border:1px solid rgba(255,255,255,.3);border-radius:6px}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-badge .icon{width:38px;height:38px;flex:0 0 38px;color:#58d5da}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-badge strong{font-size:14px;line-height:1.35}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-caption{display:grid;gap:7px}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-caption strong{font-size:18px;line-height:1.35}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-caption span{font-size:12px;line-height:1.55}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-content{padding:27px 29px}
+.ollitaldry-solution-organic-solvent-drying .solvent-section-intro{margin:9px 0 20px;color:#587180;font-size:13px;line-height:1.65}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-features{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-features article{min-height:132px;display:flex;align-items:flex-start;gap:11px;padding:16px 13px;background:#f8fafb;border:1px solid #dbe6ea;border-radius:6px}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-features article>span{width:40px;height:40px;flex:0 0 40px;display:grid;place-items:center;color:#087f8d}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-features .icon{width:32px;height:32px;stroke-width:1.5}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-features h3{margin:1px 0 6px;color:var(--navy-950);font-size:13px;line-height:1.35}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-features p{margin:0;color:#627985;font-size:11px;line-height:1.5}
+
+.ollitaldry-solution-organic-solvent-drying .solvent-recovery-panel{display:grid;grid-template-columns:minmax(285px,.66fr) minmax(0,1.55fr);overflow:hidden;border:1px solid #d6e3e8;border-radius:8px}
+.ollitaldry-solution-organic-solvent-drying .solvent-recovery-copy{padding:28px;background:#f5f8f9}
+.ollitaldry-solution-organic-solvent-drying .solvent-recovery-copy>p:not(.solution-eyebrow),
+.ollitaldry-solution-organic-solvent-drying .solvent-inerting-copy>p:not(.solution-eyebrow){margin:10px 0 18px;color:#587180;font-size:13px;line-height:1.6}
+.ollitaldry-solution-organic-solvent-drying .solvent-recovery-copy ul,
+.ollitaldry-solution-organic-solvent-drying .solvent-inerting-copy ul,
+.ollitaldry-solution-organic-solvent-drying .solvent-partner-panel ul{display:grid;gap:10px;margin:0;padding:0;list-style:none}
+.ollitaldry-solution-organic-solvent-drying .solvent-recovery-copy li,
+.ollitaldry-solution-organic-solvent-drying .solvent-inerting-copy li,
+.ollitaldry-solution-organic-solvent-drying .solvent-partner-panel li{position:relative;padding-left:20px;color:#294656;font-size:14px;line-height:1.5}
+.ollitaldry-solution-organic-solvent-drying .solvent-recovery-copy li:before,
+.ollitaldry-solution-organic-solvent-drying .solvent-inerting-copy li:before,
+.ollitaldry-solution-organic-solvent-drying .solvent-partner-panel li:before{content:"";position:absolute;top:.4em;left:1px;width:9px;height:5px;border-left:2px solid #0a9aa3;border-bottom:2px solid #0a9aa3;transform:rotate(-45deg)}
+.ollitaldry-solution-organic-solvent-drying .solvent-recovery-modules{display:grid;grid-template-columns:repeat(4,minmax(0,1fr))}
+.ollitaldry-solution-organic-solvent-drying .solvent-recovery-modules article{min-height:310px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px 15px;text-align:center}
+.ollitaldry-solution-organic-solvent-drying .solvent-recovery-modules article+article{border-left:1px solid #dbe6ea}
+.ollitaldry-solution-organic-solvent-drying .solvent-equipment-visual{width:100%;height:150px;display:grid;place-items:center;margin-bottom:10px}
+.ollitaldry-solution-organic-solvent-drying .solvent-equipment-visual img{width:100%;height:150px;object-fit:contain}
+.ollitaldry-solution-organic-solvent-drying .solvent-equipment-visual>span{width:105px;height:105px;display:grid;place-items:center;color:#087f8d;background:#eff8f8;border-radius:50%}
+.ollitaldry-solution-organic-solvent-drying .solvent-equipment-visual .icon{width:72px;height:72px;stroke-width:1.15}
+.ollitaldry-solution-organic-solvent-drying .solvent-recovery-modules h3{margin:0 0 7px;color:var(--navy-950);font-size:14px}
+.ollitaldry-solution-organic-solvent-drying .solvent-recovery-modules p{margin:0;color:#627985;font-size:11px;line-height:1.5}
+
+@media (min-width:961px) and (max-width:1599px){
+	.ollitaldry-solution-organic-solvent-drying .solvent-recovery-copy h2{font-size:21px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-recovery-copy>p:not(.solution-eyebrow){font-size:11px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-recovery-copy li{font-size:10px}
+}
+
+.ollitaldry-solution-organic-solvent-drying .solvent-inerting-section{background:#f5f8f9}
+.ollitaldry-solution-organic-solvent-drying .solvent-inerting-panel{display:grid;grid-template-columns:minmax(310px,.68fr) minmax(0,1.5fr);overflow:hidden;background:#fff;border:1px solid #d6e3e8;border-radius:8px}
+.ollitaldry-solution-organic-solvent-drying .solvent-inerting-copy{padding:29px}
+.ollitaldry-solution-organic-solvent-drying .solvent-inerting-visual{min-height:360px;display:flex;justify-content:flex-end;background-image:var(--inert-image);background-position:center;background-size:cover}
+.ollitaldry-solution-organic-solvent-drying .solvent-inerting-visual aside{width:min(275px,45%);display:flex;flex-direction:column;justify-content:center;gap:13px;padding:28px;color:#fff;background:linear-gradient(90deg,rgba(3,30,49,.58),rgba(3,30,49,.96))}
+.ollitaldry-solution-organic-solvent-drying .solvent-inerting-visual aside strong{margin-bottom:5px;font-size:18px}
+.ollitaldry-solution-organic-solvent-drying .solvent-inerting-visual aside span{position:relative;padding-left:17px;font-size:12px;line-height:1.45}
+.ollitaldry-solution-organic-solvent-drying .solvent-inerting-visual aside span:before{content:"›";position:absolute;left:0;color:#56d8dc;font-size:17px}
+
+.ollitaldry-solution-organic-solvent-drying .solvent-use-panel{display:grid;grid-template-columns:minmax(300px,.78fr) minmax(0,1.22fr);overflow:hidden;border:1px solid #d6e3e8;border-radius:8px}
+.ollitaldry-solution-organic-solvent-drying .solvent-list,
+.ollitaldry-solution-organic-solvent-drying .solvent-applications{padding:27px}
+.ollitaldry-solution-organic-solvent-drying .solvent-list{background:#f5f8f9;border-right:1px solid #d6e3e8}
+.ollitaldry-solution-organic-solvent-drying .solvent-applications{position:relative;isolation:isolate;overflow:hidden;min-height:360px;background-color:#fff;background-image:linear-gradient(90deg,rgba(255,255,255,.98) 0%,rgba(255,255,255,.94) 47%,rgba(255,255,255,.68) 73%,rgba(255,255,255,.18) 100%),var(--solvent-applications-image);background-position:center,right center;background-size:cover,auto 100%;background-repeat:no-repeat}
+.ollitaldry-solution-organic-solvent-drying .solvent-applications:before{content:"";position:absolute;z-index:-1;inset:0;background:linear-gradient(180deg,rgba(255,255,255,.2),rgba(255,255,255,.04))}
+.ollitaldry-solution-organic-solvent-drying .solvent-applications-content{position:relative;z-index:1;max-width:620px}
+.ollitaldry-solution-organic-solvent-drying .solvent-list .solution-tag-grid{grid-template-columns:repeat(3,1fr);gap:7px;margin-top:18px}
+.ollitaldry-solution-organic-solvent-drying .solvent-list .solution-tag-grid span{min-height:36px;display:grid;place-items:center;padding:5px;color:#264656;background:#fff;border:1px solid #d6e3e8;border-radius:4px;font-size:12px;text-align:center}
+.ollitaldry-solution-organic-solvent-drying .solvent-application-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:15px 24px;margin-top:18px}
+.ollitaldry-solution-organic-solvent-drying .solvent-application-grid article{min-height:64px;display:flex;align-items:center;gap:11px;padding:4px 0;background:transparent;border:0;border-radius:0}
+.ollitaldry-solution-organic-solvent-drying .solvent-application-grid article>span{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;color:#087f8d;background:rgba(255,255,255,.86);border:1px solid #cbdde2;border-radius:50%}
+.ollitaldry-solution-organic-solvent-drying .solvent-application-grid .icon{width:27px;height:27px;stroke-width:1.5}
+.ollitaldry-solution-organic-solvent-drying .solvent-application-grid h3{margin:0 0 3px;color:var(--navy-950);font-size:13px}
+.ollitaldry-solution-organic-solvent-drying .solvent-application-grid p{margin:0;color:#627985;font-size:10px;line-height:1.4}
+
+.ollitaldry-solution-organic-solvent-drying .solvent-partner-section{background:#f5f8f9}
+.ollitaldry-solution-organic-solvent-drying .solvent-partner-panel{display:grid;grid-template-columns:minmax(330px,.75fr) minmax(0,1.4fr);gap:24px;align-items:stretch}
+.ollitaldry-solution-organic-solvent-drying .solvent-partner-panel>div:first-child{padding:25px 27px;background:#fff;border:1px solid #d6e3e8;border-radius:7px}
+.ollitaldry-solution-organic-solvent-drying .solvent-partner-panel h2{margin-bottom:17px}
+.ollitaldry-solution-organic-solvent-drying .solvent-partner-panel .solution-stat-grid{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}
+.ollitaldry-solution-organic-solvent-drying .solvent-partner-panel .solution-stat-grid article{min-height:160px}
+.ollitaldry-solution-organic-solvent-drying .solvent-partner-panel .solution-stat-grid strong{font-size:29px}
+.ollitaldry-solution-organic-solvent-drying .solvent-partner-panel .solution-stat-grid span{max-width:145px;font-size:11px;line-height:1.45}
+
+.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:1px solid #d6e3e8;border-bottom:1px solid #d6e3e8}
+.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid article{min-height:180px;display:flex;flex-direction:column;align-items:center;justify-content:center;padding:18px 14px;text-align:center}
+.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid article+article{border-left:1px solid #d6e3e8}
+.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid article>span{width:55px;height:55px;display:grid;place-items:center;margin-bottom:10px;color:#087f8d}
+.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid .icon{width:40px;height:40px;stroke-width:1.45}
+.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid h3{margin:0 0 7px;color:var(--navy-950);font-size:13px}
+.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid p{margin:0;color:#627985;font-size:11px;line-height:1.5}
+
+.ollitaldry-solution-organic-solvent-drying .solvent-utilities-section{background:#f5f8f9}
+.ollitaldry-solution-organic-solvent-drying .solvent-utilities-panel{display:grid;grid-template-columns:minmax(0,1.45fr) minmax(290px,.62fr);gap:18px;align-items:stretch}
+.ollitaldry-solution-organic-solvent-drying .solvent-utilities-panel .solution-table-wrap,
+.ollitaldry-solution-organic-solvent-drying .solvent-utilities-panel .solution-standard-list{padding:25px;background:#fff;border:1px solid #d6e3e8;border-radius:7px}
+.ollitaldry-solution-organic-solvent-drying .solvent-utilities-panel h2{margin-bottom:16px}
+.ollitaldry-solution-organic-solvent-drying .solvent-utilities-panel .solution-table{font-size:12px}
+.ollitaldry-solution-organic-solvent-drying .solvent-utilities-panel .solution-table th,
+.ollitaldry-solution-organic-solvent-drying .solvent-utilities-panel .solution-table td{padding:11px 13px}
+.ollitaldry-solution-organic-solvent-drying .solvent-utilities-panel .solution-standard-list li{font-size:12px;line-height:1.5}
+
+.ollitaldry-solution-organic-solvent-drying .solvent-case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-grid article{min-height:190px;overflow:hidden;background:#fff;border:1px solid #d6e3e8;border-radius:7px;transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-grid article:hover{border-color:#86bdc5;box-shadow:0 12px 28px rgba(3,30,49,.1);transform:translateY(-2px)}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-card{width:100%;height:100%;min-height:190px;display:grid;grid-template-columns:42% 1fr;color:inherit;background:#fff;text-decoration:none;cursor:pointer}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-card:focus-visible{outline:3px solid #20b9c1;outline-offset:-3px}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-grid img{width:100%;height:100%;min-height:190px;object-fit:cover}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-card>div{display:flex;flex-direction:column;justify-content:center;padding:18px}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-grid small{color:#087f8d;font-size:10px;font-weight:800}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-grid h3{margin:6px 0 8px;color:var(--navy-950);font-size:16px}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-grid p{margin:0;color:#627985;font-size:11px;line-height:1.55}
+.ollitaldry-solution-organic-solvent-drying .solvent-cta{min-height:155px;margin-top:22px;padding:27px 34px;background:linear-gradient(100deg,#031e31,#075f73)}
+.ollitaldry-solution-organic-solvent-drying .solvent-cta h2{font-size:24px}
+.ollitaldry-solution-organic-solvent-drying .solvent-cta p{font-size:12px;line-height:1.55}
+.ollitaldry-solution-organic-solvent-drying .solvent-cta .button-row{display:flex;gap:10px;flex:0 0 auto}
+.ollitaldry-solution-organic-solvent-drying .solvent-cta .button--outline{color:#fff;border-color:rgba(255,255,255,.65)}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog{width:min(1050px,calc(100vw - 40px));max-width:none;max-height:calc(100dvh - 40px);padding:0;overflow:hidden;color:var(--navy-950);background:#fff;border:0;border-radius:8px;box-shadow:0 24px 80px rgba(0,21,34,.32)}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog[open]{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog::backdrop{background:rgba(0,26,43,.75)}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__close{position:absolute;z-index:2;top:16px;right:16px;width:42px;height:42px;display:grid;place-items:center;padding:0;color:#fff;background:#073449;border:1px solid rgba(255,255,255,.45);border-radius:50%;cursor:pointer}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__close:hover{background:#087f8d}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__close:focus-visible{outline:3px solid #56d8dc;outline-offset:2px}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__close .icon{width:20px;height:20px}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__media{min-height:520px;background:#eef3f5}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__media img{width:100%;height:100%;object-fit:cover}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__content{display:flex;flex-direction:column;justify-content:center;padding:50px 46px 42px;overflow-y:auto}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__content h2{margin:2px 0 5px;font-size:31px;line-height:1.18}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__feed{margin:0 0 18px;color:#087f8d;font-size:13px;font-weight:800}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__content>p:not(.solution-eyebrow):not(.solvent-case-dialog__feed){margin:0 0 13px;color:#516d7b;font-size:13px;line-height:1.67}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__content h3{margin:8px 0 12px;font-size:16px}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__content ul{display:grid;gap:8px;margin:0;padding:0;list-style:none}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__content li{position:relative;padding-left:20px;color:#294656;font-size:12px;line-height:1.5}
+.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__content li:before{content:"";position:absolute;top:.42em;left:1px;width:9px;height:5px;border-left:2px solid #0a9aa3;border-bottom:2px solid #0a9aa3;transform:rotate(-45deg)}
+body.solvent-case-dialog-open{overflow:hidden}
+
+/* Particle-size control: reference-led engineering layout and readable type. */
+.ollitaldry-solution-particle-size-control .solution-section{padding-top:30px;padding-bottom:30px;background:#fff}
+.ollitaldry-solution-particle-size-control .particle-target-section,
+.ollitaldry-solution-particle-size-control .particle-parameter-section,
+.ollitaldry-solution-particle-size-control .particle-applications-section,
+.ollitaldry-solution-particle-size-control .particle-comparison-section{background:#f7f9fa}
+.ollitaldry-solution-particle-size-control .particle-heading{margin:0 0 20px}
+.ollitaldry-solution-particle-size-control .particle-heading h2,
+.ollitaldry-solution-particle-size-control .particle-section-copy h2{margin:0;color:var(--navy-950);font-size:28px;line-height:1.22}
+.ollitaldry-solution-particle-size-control .particle-heading p,
+.ollitaldry-solution-particle-size-control .particle-section-copy>p:not(.solution-eyebrow){margin:8px 0 0;color:#587180;font-size:14px;line-height:1.6}
+.ollitaldry-solution-particle-size-control .particle-section-copy ul{display:grid;gap:9px;margin:18px 0 0;padding:0;list-style:none}
+.ollitaldry-solution-particle-size-control .particle-section-copy li{position:relative;padding-left:21px;color:#294656;font-size:13px;line-height:1.5}
+.ollitaldry-solution-particle-size-control .particle-section-copy li:before{content:"";position:absolute;top:.42em;left:1px;width:9px;height:5px;border-left:2px solid #0a9aa3;border-bottom:2px solid #0a9aa3;transform:rotate(-45deg)}
+
+.ollitaldry-solution-particle-size-control .particle-roadmap{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));padding:18px 0;border-bottom:1px solid #d6e3e8}
+.ollitaldry-solution-particle-size-control .particle-roadmap article{position:relative;min-width:0;display:flex;align-items:center;gap:13px;padding:0 20px}
+.ollitaldry-solution-particle-size-control .particle-roadmap article>span{width:54px;height:54px;flex:0 0 54px;display:grid;place-items:center;color:#fff;background:#087f8d;border-radius:50%}
+.ollitaldry-solution-particle-size-control .particle-roadmap article>span .icon{width:28px;height:28px;stroke-width:1.55}
+.ollitaldry-solution-particle-size-control .particle-roadmap h3{margin:0 0 4px;color:var(--navy-950);font-size:14px;line-height:1.3}
+.ollitaldry-solution-particle-size-control .particle-roadmap p{margin:0;color:#607885;font-size:12px;line-height:1.45}
+.ollitaldry-solution-particle-size-control .particle-roadmap b{position:absolute;z-index:2;right:-8px;color:#7995a2;font-weight:400}
+.ollitaldry-solution-particle-size-control .particle-roadmap b .icon{width:18px;height:18px}
+
+.ollitaldry-solution-particle-size-control .particle-target-layout{display:grid;grid-template-columns:minmax(290px,.72fr) minmax(0,1.55fr);gap:30px;align-items:center}
+.ollitaldry-solution-particle-size-control .particle-chart-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ollitaldry-solution-particle-size-control .particle-chart-grid article{position:relative;min-width:0;min-height:252px;padding:18px 15px 13px;text-align:center;background:#fff;border:1px solid #d3e0e5;border-radius:7px}
+.ollitaldry-solution-particle-size-control .particle-chart-grid h3{margin:0;color:var(--navy-950);font-size:15px}
+.ollitaldry-solution-particle-size-control .particle-chart-grid p{margin:4px 0 0;color:#087f8d;font-size:12px;font-weight:700}
+.ollitaldry-solution-particle-size-control .particle-chart-grid>article>small{display:block;margin-top:1px;color:#526e7b;font-size:11px}
+.ollitaldry-solution-particle-size-control .particle-chart{width:100%;height:176px;display:block;margin:4px 0 -3px;overflow:visible}
+.ollitaldry-solution-particle-size-control .particle-chart__grid{fill:none;stroke:#dce7eb;stroke-width:.85}
+.ollitaldry-solution-particle-size-control .particle-chart__line{fill:none;stroke:#2c6fc2;stroke-width:1.55;stroke-linecap:round;stroke-linejoin:round}
+.ollitaldry-solution-particle-size-control .particle-chart-grid .particle-chart__line--soft{stroke:#779cd4;stroke-width:1.25}
+.ollitaldry-solution-particle-size-control .particle-chart-grid .particle-chart__line--pale{stroke:#abc0e1;stroke-width:1.15}
+.ollitaldry-solution-particle-size-control .particle-analysis-chart .particle-chart__line--two{stroke:#0095a0;stroke-width:1.55}
+.ollitaldry-solution-particle-size-control .particle-analysis-chart .particle-chart__line--three{stroke:#d25567;stroke-width:1.55}
+.ollitaldry-solution-particle-size-control .particle-chart__ticks text{fill:#607885;font-size:8.5px}
+.ollitaldry-solution-particle-size-control .particle-chart__ticks .particle-chart__ylabel{font-size:7.5px;text-anchor:middle}
+.ollitaldry-solution-particle-size-control .particle-technical-note{margin:13px 0 0;color:#758a95;font-size:11px;line-height:1.45;text-align:right}
+
+.ollitaldry-solution-particle-size-control .particle-atomizer-layout{display:grid;grid-template-columns:minmax(260px,.62fr) minmax(0,1.65fr);gap:26px;align-items:center}
+.ollitaldry-solution-particle-size-control .particle-atomizer-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}
+.ollitaldry-solution-particle-size-control .particle-atomizer-card{position:relative;min-width:0;min-height:224px;display:grid;grid-template-columns:42% 1fr;overflow:hidden;background:#fff;border:1px solid #d6e3e8;border-radius:7px;transition:border-color .2s ease,box-shadow .2s ease,transform .2s ease}
+.ollitaldry-solution-particle-size-control .particle-atomizer-card:hover{border-color:#86c6cc;box-shadow:0 13px 28px rgba(3,42,67,.12);transform:translateY(-2px)}
+.ollitaldry-solution-particle-size-control .particle-atomizer-card__action{position:absolute;z-index:2;inset:0;width:100%;height:100%;padding:0;border:0;background:transparent;cursor:pointer}
+.ollitaldry-solution-particle-size-control .particle-atomizer-card__action:focus-visible{outline:3px solid #0796a0;outline-offset:-3px}
+.ollitaldry-solution-particle-size-control .particle-atomizer-image{min-width:0;display:grid;place-items:center;padding:9px;background:linear-gradient(180deg,#f8fbfc,#eef4f6);border-right:1px solid #dfe8eb}
+.ollitaldry-solution-particle-size-control .particle-atomizer-image img{width:100%;height:202px;display:block;object-fit:contain;mix-blend-mode:multiply}
+.ollitaldry-solution-particle-size-control .particle-atomizer-card__body{display:flex;flex-direction:column;justify-content:center;padding:17px 15px 18px}
+.ollitaldry-solution-particle-size-control .particle-atomizer-grid h3{margin:0 0 7px;color:var(--navy-950);font-size:15px;line-height:1.3}
+.ollitaldry-solution-particle-size-control .particle-atomizer-grid p{display:-webkit-box;margin:0;overflow:hidden;color:#5b7380;font-size:11px;line-height:1.48;-webkit-box-orient:vertical;-webkit-line-clamp:2}
+.ollitaldry-solution-particle-size-control .particle-atomizer-card__more{display:flex;align-items:center;gap:6px;margin-top:17px;color:#087f8d;font-size:11px;font-weight:800;line-height:1.2}
+.ollitaldry-solution-particle-size-control .particle-atomizer-card__more .icon{width:15px;height:15px}
+.particle-atomizer-dialog{width:min(1120px,calc(100% - 48px));max-width:none;max-height:calc(100dvh - 48px);margin:auto;padding:0;overflow:hidden;border:0;border-radius:8px;color:var(--navy-950);background:#fff;box-shadow:0 30px 90px rgba(0,21,36,.36)}
+.particle-atomizer-dialog::backdrop{background:rgba(2,23,37,.82);backdrop-filter:blur(5px)}
+.particle-atomizer-dialog__panel{display:grid;grid-template-columns:minmax(360px,.9fr) minmax(470px,1.1fr);height:min(720px,calc(100dvh - 48px))}
+.particle-atomizer-dialog__media{display:grid;min-width:0;place-items:center;padding:22px;background:linear-gradient(180deg,#f8fbfc,#edf3f5)}
+.particle-atomizer-dialog__media img{width:100%;height:100%;display:block;object-fit:contain;mix-blend-mode:multiply}
+.particle-atomizer-dialog__content{min-width:0;padding:45px 42px 34px;overflow-y:auto}
+.particle-atomizer-dialog__content h2{margin:6px 0 10px;color:var(--navy-950);font-size:29px;line-height:1.2}
+.particle-atomizer-dialog__lead{margin:0;color:#456675;font-size:14px;line-height:1.62}
+.particle-atomizer-dialog__details{display:grid;grid-template-columns:1fr 1fr;gap:20px 24px;margin-top:25px;padding-top:22px;border-top:1px solid #dbe6ea}
+.particle-atomizer-dialog__details section{margin:0;padding:0;border:0}
+.particle-atomizer-dialog__details h3{margin:0 0 7px;color:var(--navy-950);font-size:15px}
+.particle-atomizer-dialog__details p{margin:0;color:#5b7380;font-size:12px;line-height:1.6}
+.particle-atomizer-dialog__details ul{display:grid;gap:7px;margin:0;padding:0;list-style:none}
+.particle-atomizer-dialog__details li{display:flex;align-items:flex-start;gap:7px;color:#5b7380;font-size:12px;line-height:1.5}
+.particle-atomizer-dialog__details li .icon{width:16px;height:16px;flex:0 0 16px;margin-top:2px;color:#07949d}
+.particle-atomizer-dialog__note{margin:23px 0 0;padding-top:16px;border-top:1px solid #dbe6ea;color:#758b96;font-size:10px;line-height:1.5}
+.particle-atomizer-dialog__cta{display:inline-flex;margin-top:20px}
+.particle-atomizer-dialog__cta .icon{width:17px;height:17px;margin-left:7px}
+.particle-atomizer-dialog__close{position:absolute;z-index:3;top:14px;right:14px;width:40px;height:40px;display:grid;padding:0;place-items:center;color:var(--navy-950);background:rgba(255,255,255,.96);border:1px solid #d6e3e8;border-radius:50%;cursor:pointer}
+.particle-atomizer-dialog__close:hover,.particle-atomizer-dialog__close:focus-visible{color:#fff;background:#087f8d;border-color:#087f8d;outline:0}
+.particle-atomizer-dialog__close .icon{width:20px;height:20px}
+body.particle-atomizer-dialog-open{overflow:hidden}
+
+.ollitaldry-solution-particle-size-control .particle-parameter-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:1px solid #d6e3e8;border-bottom:1px solid #d6e3e8}
+.ollitaldry-solution-particle-size-control .particle-parameter-grid article{min-width:0;min-height:132px;display:flex;align-items:center;gap:12px;padding:17px 15px}
+.ollitaldry-solution-particle-size-control .particle-parameter-grid article+article{border-left:1px solid #d6e3e8}
+.ollitaldry-solution-particle-size-control .particle-parameter-grid article>span{width:48px;height:48px;flex:0 0 48px;display:grid;place-items:center;color:#087f8d;background:#fff;border:1px solid #c9dde2;border-radius:50%}
+.ollitaldry-solution-particle-size-control .particle-parameter-grid .icon{width:28px;height:28px;stroke-width:1.45}
+.ollitaldry-solution-particle-size-control .particle-parameter-grid h3{margin:0 0 5px;color:var(--navy-950);font-size:14px;line-height:1.32}
+.ollitaldry-solution-particle-size-control .particle-parameter-grid p{margin:0;color:#607885;font-size:12px;line-height:1.45}
+
+.ollitaldry-solution-particle-size-control .particle-analysis-layout{display:grid;grid-template-columns:minmax(260px,1fr) minmax(230px,.88fr) minmax(250px,1fr) minmax(190px,.7fr);gap:13px;align-items:stretch}
+.ollitaldry-solution-particle-size-control .particle-analysis-layout>.particle-section-copy{align-self:center;padding-right:14px}
+.ollitaldry-solution-particle-size-control .particle-analysis-chart,
+.ollitaldry-solution-particle-size-control .particle-sem-card,
+.ollitaldry-solution-particle-size-control .particle-report-card{min-width:0;margin:0;padding:17px;background:#fff;border:1px solid #d6e3e8;border-radius:7px}
+.ollitaldry-solution-particle-size-control .particle-analysis-chart{text-align:center}
+.ollitaldry-solution-particle-size-control .particle-analysis-chart h3,
+.ollitaldry-solution-particle-size-control .particle-report-card h3{margin:0;color:var(--navy-950);font-size:14px}
+.ollitaldry-solution-particle-size-control .particle-analysis-chart .particle-chart{height:190px;margin-top:5px}
+.ollitaldry-solution-particle-size-control .particle-chart-legend{display:flex;justify-content:center;gap:12px;margin-top:-3px}
+.ollitaldry-solution-particle-size-control .particle-chart-legend span{position:relative;padding-left:12px;color:#536f7d;font-size:10px}
+.ollitaldry-solution-particle-size-control .particle-chart-legend span:before{content:"";position:absolute;top:4px;left:0;width:7px;height:2px;background:#2d72c4}
+.ollitaldry-solution-particle-size-control .particle-chart-legend span:nth-child(2):before{background:#06939b}
+.ollitaldry-solution-particle-size-control .particle-chart-legend span:nth-child(3):before{background:#cf6471}
+.ollitaldry-solution-particle-size-control .particle-analysis-chart>small{display:block;margin-top:7px;color:#607885;font-size:11px}
+.ollitaldry-solution-particle-size-control .particle-sem-card{display:flex;flex-direction:column}
+.ollitaldry-solution-particle-size-control .particle-sem-card img{width:100%;height:190px;display:block;object-fit:cover;filter:contrast(1.05)}
+.ollitaldry-solution-particle-size-control .particle-sem-card figcaption{display:grid;gap:4px;margin-top:10px}
+.ollitaldry-solution-particle-size-control .particle-sem-card strong{color:var(--navy-950);font-size:14px}
+.ollitaldry-solution-particle-size-control .particle-sem-card span{color:#607885;font-size:11px;line-height:1.4}
+.ollitaldry-solution-particle-size-control .particle-report-card{display:flex;flex-direction:column;justify-content:center}
+.ollitaldry-solution-particle-size-control .particle-report-card dl{display:grid;grid-template-columns:.72fr 1.28fr;margin:12px 0 0;font-size:11px}
+.ollitaldry-solution-particle-size-control .particle-report-card dt,
+.ollitaldry-solution-particle-size-control .particle-report-card dd{margin:0;padding:7px 5px;border-bottom:1px solid #dfe8eb}
+.ollitaldry-solution-particle-size-control .particle-report-card dt{color:var(--navy-950);font-weight:700}
+.ollitaldry-solution-particle-size-control .particle-report-card dd{color:#607885;text-align:right}
+.ollitaldry-solution-particle-size-control .particle-report-card>small{margin-top:10px;color:#7a8d96;font-size:10px;line-height:1.4}
+
+.ollitaldry-solution-particle-size-control .particle-application-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:1px solid #d6e3e8;border-bottom:1px solid #d6e3e8}
+.ollitaldry-solution-particle-size-control .particle-application-grid article{min-width:0;min-height:122px;display:flex;align-items:center;gap:12px;padding:16px 15px}
+.ollitaldry-solution-particle-size-control .particle-application-grid article+article{border-left:1px solid #d6e3e8}
+.ollitaldry-solution-particle-size-control .particle-application-grid article>span{width:48px;height:48px;flex:0 0 48px;display:grid;place-items:center;color:#087f8d;background:#fff;border:1px solid #c9dde2;border-radius:50%}
+.ollitaldry-solution-particle-size-control .particle-application-grid .icon{width:27px;height:27px;stroke-width:1.45}
+.ollitaldry-solution-particle-size-control .particle-application-grid h3{margin:0 0 5px;color:var(--navy-950);font-size:14px}
+.ollitaldry-solution-particle-size-control .particle-application-grid p{margin:0;color:#607885;font-size:12px;line-height:1.45}
+
+.ollitaldry-solution-particle-size-control .particle-workflow-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));border-top:1px solid #d6e3e8;border-bottom:1px solid #d6e3e8}
+.ollitaldry-solution-particle-size-control .particle-workflow-grid article{position:relative;min-width:0;min-height:132px;display:flex;align-items:center;gap:12px;padding:16px 20px}
+.ollitaldry-solution-particle-size-control .particle-workflow-grid article>span{width:45px;height:45px;flex:0 0 45px;display:grid;place-items:center;color:#087f8d}
+.ollitaldry-solution-particle-size-control .particle-workflow-grid article>span .icon{width:33px;height:33px;stroke-width:1.45}
+.ollitaldry-solution-particle-size-control .particle-workflow-grid small{display:inline;margin-right:4px;color:#087f8d;font-size:12px;font-weight:800}
+.ollitaldry-solution-particle-size-control .particle-workflow-grid h3{display:inline;margin:0;color:var(--navy-950);font-size:14px}
+.ollitaldry-solution-particle-size-control .particle-workflow-grid p{margin:7px 0 0;color:#607885;font-size:12px;line-height:1.5}
+.ollitaldry-solution-particle-size-control .particle-workflow-grid b{position:absolute;z-index:2;right:-8px;color:#7995a2;font-weight:400}
+.ollitaldry-solution-particle-size-control .particle-workflow-grid b .icon{width:17px;height:17px}
+
+.ollitaldry-solution-particle-size-control .particle-table-wrap{overflow-x:auto;border:1px solid #d6e3e8;border-radius:7px}
+.ollitaldry-solution-particle-size-control .particle-table{width:100%;min-width:980px;border-collapse:collapse;background:#fff;font-size:12px}
+.ollitaldry-solution-particle-size-control .particle-table th,
+.ollitaldry-solution-particle-size-control .particle-table td{padding:12px 13px;border-right:1px solid #dfe8eb;border-bottom:1px solid #dfe8eb;text-align:left;vertical-align:top;line-height:1.45}
+.ollitaldry-solution-particle-size-control .particle-table thead th{color:#fff;background:#075f73;font-size:12px}
+.ollitaldry-solution-particle-size-control .particle-table tbody th{color:#087f8d;font-weight:800}
+.ollitaldry-solution-particle-size-control .particle-table td{color:#4f6b79}
+.ollitaldry-solution-particle-size-control .particle-table tr:last-child>*{border-bottom:0}
+.ollitaldry-solution-particle-size-control .particle-table tr>*:last-child{border-right:0}
+
+.ollitaldry-solution-particle-size-control .particle-outcome-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:11px}
+.ollitaldry-solution-particle-size-control .particle-outcome-grid article{min-width:0;min-height:194px;padding:18px;background:#fff;border:1px solid #d6e3e8;border-radius:7px}
+.ollitaldry-solution-particle-size-control .particle-outcome-head{display:flex;align-items:flex-start;gap:11px;min-height:76px}
+.ollitaldry-solution-particle-size-control .particle-outcome-grid article span{width:42px;height:42px;flex:0 0 42px;display:grid;place-items:center;color:#087f8d;background:#edf8f8;border-radius:50%}
+.ollitaldry-solution-particle-size-control .particle-outcome-grid .icon{width:24px;height:24px}
+.ollitaldry-solution-particle-size-control .particle-outcome-metric{display:block;margin-top:12px;color:#087f8d;font-size:27px;line-height:1;font-weight:800}
+.ollitaldry-solution-particle-size-control .particle-outcome-grid h3{margin:1px 0 4px;color:var(--navy-950);font-size:14px}
+.ollitaldry-solution-particle-size-control .particle-outcome-grid p{margin:0;color:#607885;font-size:11px;line-height:1.42}
+.ollitaldry-solution-particle-size-control .particle-outcome-grid article>b{display:block;margin-top:8px;color:#294656;font-size:12px;line-height:1.45}
+.ollitaldry-solution-particle-size-control .particle-cta{min-height:218px;display:flex;align-items:center;margin-top:22px;padding:30px 36px;background-color:#031e31;background-image:linear-gradient(90deg,#031e31 0%,rgba(3,30,49,.99) 38%,rgba(3,30,49,.42) 55%,rgba(3,30,49,0) 73%),var(--particle-cta-image);background-position:center,right center;background-repeat:no-repeat}
+.ollitaldry-solution-particle-size-control .particle-cta>div{width:52%}
+.ollitaldry-solution-particle-size-control .particle-cta h2{font-size:25px}
+.ollitaldry-solution-particle-size-control .particle-cta p{font-size:13px;line-height:1.55}
+.ollitaldry-solution-particle-size-control .particle-cta .button-row{display:flex;flex:0 0 auto;gap:10px;margin-top:19px}
+.ollitaldry-solution-particle-size-control .particle-cta .button--outline{color:#fff;border-color:rgba(255,255,255,.65)}
+
+@media (min-width:1600px){
+	.ollitaldry-solution-particle-size-control .particle-heading h2,
+	.ollitaldry-solution-particle-size-control .particle-section-copy h2{font-size:30px}
+	.ollitaldry-solution-particle-size-control .particle-heading p,
+	.ollitaldry-solution-particle-size-control .particle-section-copy>p:not(.solution-eyebrow){font-size:14px}
+	.ollitaldry-solution-particle-size-control .particle-section-copy li{font-size:13px}
+	.ollitaldry-solution-particle-size-control .particle-roadmap h3,
+	.ollitaldry-solution-particle-size-control .particle-atomizer-grid h3,
+	.ollitaldry-solution-particle-size-control .particle-parameter-grid h3,
+	.ollitaldry-solution-particle-size-control .particle-application-grid h3,
+	.ollitaldry-solution-particle-size-control .particle-workflow-grid h3{font-size:15px}
+	.ollitaldry-solution-particle-size-control .particle-roadmap p,
+	.ollitaldry-solution-particle-size-control .particle-atomizer-grid p,
+	.ollitaldry-solution-particle-size-control .particle-parameter-grid p,
+	.ollitaldry-solution-particle-size-control .particle-application-grid p{font-size:12px}
+	.ollitaldry-solution-particle-size-control .particle-atomizer-image img{height:202px}
+	.ollitaldry-solution-particle-size-control .particle-atomizer-card{min-height:238px}
+}
+
+@media (max-width:1199px){
+	.ollitaldry-solution-particle-size-control .particle-roadmap article{display:block;padding:0 12px;text-align:center}
+	.ollitaldry-solution-particle-size-control .particle-roadmap article>span{margin:0 auto 9px}
+	.ollitaldry-solution-particle-size-control .particle-target-layout,
+	.ollitaldry-solution-particle-size-control .particle-atomizer-layout{grid-template-columns:1fr}
+	.ollitaldry-solution-particle-size-control .particle-atomizer-card{grid-template-columns:42% 1fr;min-height:224px}
+	.ollitaldry-solution-particle-size-control .particle-parameter-grid,
+	.ollitaldry-solution-particle-size-control .particle-application-grid,
+	.ollitaldry-solution-particle-size-control .particle-workflow-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+	.ollitaldry-solution-particle-size-control .particle-parameter-grid article:nth-child(4),
+	.ollitaldry-solution-particle-size-control .particle-application-grid article:nth-child(4){border-left:0}
+	.ollitaldry-solution-particle-size-control .particle-parameter-grid article:nth-child(n+4),
+	.ollitaldry-solution-particle-size-control .particle-application-grid article:nth-child(n+4),
+	.ollitaldry-solution-particle-size-control .particle-workflow-grid article:nth-child(n+4){border-top:1px solid #d6e3e8}
+	.ollitaldry-solution-particle-size-control .particle-workflow-grid article:nth-child(3) b{display:none}
+	.ollitaldry-solution-particle-size-control .particle-analysis-layout{grid-template-columns:1fr 1fr}
+	.ollitaldry-solution-particle-size-control .particle-analysis-layout>.particle-section-copy{grid-column:1/-1;padding-right:0}
+	.ollitaldry-solution-particle-size-control .particle-outcome-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+
+@media (max-width:720px){
+	.ollitaldry-solution-particle-size-control .solution-section{padding-top:24px;padding-bottom:24px}
+	.ollitaldry-solution-particle-size-control .particle-heading h2,
+	.ollitaldry-solution-particle-size-control .particle-section-copy h2{font-size:22px}
+	.ollitaldry-solution-particle-size-control .particle-roadmap,
+	.ollitaldry-solution-particle-size-control .particle-chart-grid,
+	.ollitaldry-solution-particle-size-control .particle-atomizer-grid,
+	.ollitaldry-solution-particle-size-control .particle-parameter-grid,
+	.ollitaldry-solution-particle-size-control .particle-analysis-layout,
+	.ollitaldry-solution-particle-size-control .particle-application-grid,
+	.ollitaldry-solution-particle-size-control .particle-workflow-grid,
+	.ollitaldry-solution-particle-size-control .particle-outcome-grid{grid-template-columns:1fr}
+	.ollitaldry-solution-particle-size-control .particle-roadmap article{display:flex;min-height:86px;padding:13px;text-align:left;border-top:1px solid #dfe8eb}
+	.ollitaldry-solution-particle-size-control .particle-roadmap article>span{margin:0}
+	.ollitaldry-solution-particle-size-control .particle-roadmap b,
+	.ollitaldry-solution-particle-size-control .particle-workflow-grid b{display:none}
+	.ollitaldry-solution-particle-size-control .particle-chart-grid article{min-height:230px}
+	.ollitaldry-solution-particle-size-control .particle-atomizer-card{grid-template-columns:40% 1fr;grid-template-rows:1fr;min-height:205px}
+	.ollitaldry-solution-particle-size-control .particle-atomizer-image{border-right:1px solid #dfe8eb;border-bottom:0}
+	.ollitaldry-solution-particle-size-control .particle-atomizer-image img{height:185px}
+	.particle-atomizer-dialog{width:calc(100% - 20px);max-height:calc(100dvh - 20px);border-radius:7px}
+	.particle-atomizer-dialog__panel{display:block;height:auto;max-height:calc(100dvh - 20px);overflow-y:auto}
+	.particle-atomizer-dialog__media{height:330px;padding:16px}
+	.particle-atomizer-dialog__content{padding:28px 19px 26px;overflow:visible}
+	.particle-atomizer-dialog__content h2{padding-right:34px;font-size:25px}
+	.particle-atomizer-dialog__details{grid-template-columns:1fr;gap:18px}
+	.ollitaldry-solution-particle-size-control .particle-parameter-grid article,
+	.ollitaldry-solution-particle-size-control .particle-application-grid article,
+	.ollitaldry-solution-particle-size-control .particle-workflow-grid article{min-height:105px;border-left:0!important;border-top:1px solid #d6e3e8}
+	.ollitaldry-solution-particle-size-control .particle-analysis-layout>.particle-section-copy{grid-column:auto}
+	.ollitaldry-solution-particle-size-control .particle-sem-card img{height:220px}
+	.ollitaldry-solution-particle-size-control .particle-table-wrap{margin-right:-16px;padding-right:16px;border-right:0;border-radius:7px 0 0 7px}
+	.ollitaldry-solution-particle-size-control .particle-outcome-grid article{min-height:0}
+	.ollitaldry-solution-particle-size-control .particle-cta{display:block;padding:24px 20px;background-image:linear-gradient(90deg,rgba(3,30,49,.97),rgba(3,30,49,.72)),var(--particle-cta-image);background-position:center,right center;background-size:100% 100%,auto 115%}
+	.ollitaldry-solution-particle-size-control .particle-cta>div{width:auto}
+	.ollitaldry-solution-particle-size-control .particle-cta .button-row{flex-wrap:wrap;margin-top:18px}
+}
+
+@media (min-width:1600px){
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow article{min-height:185px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow article>span{width:80px;height:80px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow .icon{width:48px;height:48px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow article>b{top:47px}
+}
+@media (max-width:1199px){
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow{grid-template-columns:repeat(4,1fr);gap:8px;padding-bottom:50px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow article:nth-child(4)>b{display:none}
+	.ollitaldry-solution-organic-solvent-drying .solvent-safety-grid{grid-template-columns:minmax(300px,.78fr) minmax(0,1.25fr)}
+	.ollitaldry-solution-organic-solvent-drying .solvent-safety-features{grid-template-columns:1fr 1fr}
+	.ollitaldry-solution-organic-solvent-drying .solvent-recovery-panel{grid-template-columns:1fr}
+	.ollitaldry-solution-organic-solvent-drying .solvent-recovery-copy{padding-bottom:25px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-inerting-panel{grid-template-columns:minmax(275px,.7fr) minmax(0,1.2fr)}
+	.ollitaldry-solution-organic-solvent-drying .solvent-use-panel{grid-template-columns:1fr}
+	.ollitaldry-solution-organic-solvent-drying .solvent-list{border-right:0;border-bottom:1px solid #d6e3e8}
+	.ollitaldry-solution-organic-solvent-drying .solvent-partner-panel{grid-template-columns:1fr}
+	.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid{grid-template-columns:repeat(3,1fr)}
+	.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid article:nth-child(4){border-left:0}
+	.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid article:nth-child(n+4){border-top:1px solid #d6e3e8}
+	.ollitaldry-solution-organic-solvent-drying .solvent-case-card{grid-template-columns:1fr}
+	.ollitaldry-solution-organic-solvent-drying .solvent-case-grid img{height:150px;min-height:150px}
+}
+@media (max-width:720px){
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-section,
+	.ollitaldry-solution-organic-solvent-drying .solvent-safety-section,
+	.ollitaldry-solution-organic-solvent-drying .solvent-recovery-section,
+	.ollitaldry-solution-organic-solvent-drying .solvent-inerting-section,
+	.ollitaldry-solution-organic-solvent-drying .solvent-use-section,
+	.ollitaldry-solution-organic-solvent-drying .solvent-partner-section,
+	.ollitaldry-solution-organic-solvent-drying .solvent-engineering-section,
+	.ollitaldry-solution-organic-solvent-drying .solvent-utilities-section,
+	.ollitaldry-solution-organic-solvent-drying .solvent-cases-section{padding-top:22px;padding-bottom:22px}
+	.ollitaldry-solution-organic-solvent-drying .solution-heading h2,
+	.ollitaldry-solution-organic-solvent-drying .solvent-safety-content>h2,
+	.ollitaldry-solution-organic-solvent-drying .solvent-recovery-copy h2,
+	.ollitaldry-solution-organic-solvent-drying .solvent-inerting-copy h2,
+	.ollitaldry-solution-organic-solvent-drying .solvent-list h2,
+	.ollitaldry-solution-organic-solvent-drying .solvent-applications-content>h2,
+	.ollitaldry-solution-organic-solvent-drying .solvent-partner-panel h2,
+	.ollitaldry-solution-organic-solvent-drying .solvent-utilities-panel h2{font-size:21px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow{grid-template-columns:repeat(2,minmax(0,1fr));padding-bottom:0}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow article{min-height:155px;border-bottom:1px solid #e1eaed}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow article:nth-child(even)>b{display:none}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-return{display:none}
+	.ollitaldry-solution-organic-solvent-drying .solvent-safety-grid,
+	.ollitaldry-solution-organic-solvent-drying .solvent-inerting-panel{grid-template-columns:1fr}
+	.ollitaldry-solution-organic-solvent-drying .solvent-safety-visual{min-height:350px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-safety-content,
+	.ollitaldry-solution-organic-solvent-drying .solvent-recovery-copy,
+	.ollitaldry-solution-organic-solvent-drying .solvent-inerting-copy,
+	.ollitaldry-solution-organic-solvent-drying .solvent-list,
+	.ollitaldry-solution-organic-solvent-drying .solvent-applications{padding:21px 18px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-safety-features{grid-template-columns:1fr}
+	.ollitaldry-solution-organic-solvent-drying .solvent-recovery-modules,
+	.ollitaldry-solution-organic-solvent-drying .solvent-application-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+	.ollitaldry-solution-organic-solvent-drying .solvent-safety-features article{min-height:0}
+	.ollitaldry-solution-organic-solvent-drying .solvent-recovery-modules article{min-height:285px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-recovery-modules article:nth-child(odd){border-left:0}
+	.ollitaldry-solution-organic-solvent-drying .solvent-recovery-modules article:nth-child(n+3){border-top:1px solid #dbe6ea}
+	.ollitaldry-solution-organic-solvent-drying .solvent-inerting-visual{min-height:330px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-inerting-visual aside{width:55%;padding:20px 16px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-list .solution-tag-grid{grid-template-columns:1fr 1fr}
+	.ollitaldry-solution-organic-solvent-drying .solvent-application-grid article{min-height:128px;display:block}
+	.ollitaldry-solution-organic-solvent-drying .solvent-partner-panel .solution-stat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+	.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+	.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid article{min-height:190px;border-top:1px solid #d6e3e8}
+	.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid article:nth-child(odd){border-left:0}
+	.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid article:nth-child(4){border-left:1px solid #d6e3e8}
+	.ollitaldry-solution-organic-solvent-drying .solvent-utilities-panel{grid-template-columns:1fr}
+	.ollitaldry-solution-organic-solvent-drying .solvent-utilities-panel .solution-table-wrap,
+	.ollitaldry-solution-organic-solvent-drying .solvent-utilities-panel .solution-standard-list{padding:20px 17px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-utilities-panel .solution-table{min-width:620px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-case-grid{grid-template-columns:1fr}
+	.ollitaldry-solution-organic-solvent-drying .solvent-case-grid article{min-height:180px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-case-card{min-height:180px;grid-template-columns:40% 1fr}
+	.ollitaldry-solution-organic-solvent-drying .solvent-case-grid img{height:100%;min-height:180px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog{width:calc(100vw - 24px);max-height:calc(100dvh - 24px);overflow-y:auto}
+	.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog[open]{display:block}
+	.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__media{height:230px;min-height:0}
+	.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__content{padding:29px 21px 30px;overflow:visible}
+	.ollitaldry-solution-organic-solvent-drying .solvent-case-dialog__content h2{font-size:26px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-cta{display:block;padding:24px 20px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-cta .button-row{flex-wrap:wrap;margin-top:18px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow article,
+	.ollitaldry-solution-organic-solvent-drying .solvent-safety-grid>*,
+	.ollitaldry-solution-organic-solvent-drying .solvent-recovery-panel>*,
+	.ollitaldry-solution-organic-solvent-drying .solvent-recovery-modules article,
+	.ollitaldry-solution-organic-solvent-drying .solvent-application-grid article,
+	.ollitaldry-solution-organic-solvent-drying .solvent-engineering-grid article,
+	.ollitaldry-solution-organic-solvent-drying .solvent-case-grid article{min-width:0}
+	.ollitaldry-solution-organic-solvent-drying h2,
+	.ollitaldry-solution-organic-solvent-drying h3,
+	.ollitaldry-solution-organic-solvent-drying p,
+	.ollitaldry-solution-organic-solvent-drying li{overflow-wrap:anywhere}
 }
 
 /* Shared FAQ alignment for every solution landing page. */
@@ -149,7 +701,10 @@
 .ollitaldry-solution-sticky-material-spray-drying .ollital-faq__heading{max-width:none;text-align:center}
 
 /* Heat-sensitive materials: reference-led application strip and process view. */
-.ollitaldry-solution-heat-sensitive-materials .solution-hero:after{background:linear-gradient(90deg,rgba(2,20,34,.9) 0,rgba(2,20,34,.55) 31%,rgba(2,20,34,.06) 62%)}
+.ollitaldry-solution-heat-sensitive-materials .solution-hero{background-image:linear-gradient(90deg,var(--sp-deep) 0,rgba(3,30,49,.96) 24%,rgba(3,30,49,.2) 60%,rgba(3,30,49,0) 76%),var(--solution-hero-image);background-position:center,right center;background-size:cover,auto 100%;background-repeat:no-repeat}
+.ollitaldry-solution-heat-sensitive-materials .solution-hero:after{background:linear-gradient(90deg,rgba(2,20,34,.7) 0,rgba(2,20,34,.36) 32%,rgba(2,20,34,.03) 64%)}
+.ollitaldry-solution-heat-sensitive-materials .solution-hero__inner{padding-bottom:70px}
+.ollitaldry-solution-heat-sensitive-materials .solution-hero__facts{transform:translateY(-2px)}
 .heat-applications .solution-media-strip{box-shadow:0 16px 36px rgba(3,35,52,.12)}
 .heat-applications .solution-media-strip article{min-height:148px;display:flex;flex-direction:column;justify-content:center;gap:7px;padding:8px 15px;text-align:center}
 .heat-applications .solution-media-strip img{width:100%;height:92px;object-fit:contain;border-radius:0}
@@ -173,6 +728,7 @@
 .ollitaldry-solution-heat-sensitive-materials .solution-steps article{min-height:145px;padding:18px}
 
 /* Organic-solvent drying: real equipment train and recovery modules. */
+.ollitaldry-solution-organic-solvent-drying .solution-hero{background-position:right center;background-size:auto 100%;background-repeat:no-repeat}
 .ollitaldry-solution-organic-solvent-drying .solution-hero:after{background:linear-gradient(90deg,rgba(2,20,34,.9) 0,rgba(2,20,34,.55) 31%,rgba(2,20,34,.05) 62%)}
 .solvent-process-section{padding-bottom:18px}
 .solvent-process-visual{position:relative;padding:8px 18px 50px;background:#fff;border-bottom:1px solid var(--sp-line)}
@@ -192,7 +748,8 @@
 .ollitaldry-solution-organic-solvent-drying .solution-inerting>div:last-child{background-position:center}
 
 /* Particle-size control: measured curves, atomizer catalog and morphology view. */
-.ollitaldry-solution-particle-size-control .solution-hero:after{background:linear-gradient(90deg,rgba(2,20,34,.9) 0,rgba(2,20,34,.56) 30%,rgba(2,20,34,.05) 62%)}
+.ollitaldry-solution-particle-size-control .solution-hero{background-color:#031e31;background-position:right center;background-size:auto 100%;background-repeat:no-repeat}
+.ollitaldry-solution-particle-size-control .solution-hero:after{background:linear-gradient(90deg,rgba(2,20,34,.94) 0,rgba(2,20,34,.7) 32%,rgba(2,20,34,.16) 57%,rgba(2,20,34,0) 72%)}
 .particle-chart{width:100%;height:130px;display:block;overflow:visible}
 .particle-chart__grid{fill:none;stroke:#dfe8ec;stroke-width:1}
 .particle-chart__line{fill:none;stroke:#2d72c4;stroke-width:3;stroke-linecap:round}
@@ -225,7 +782,16 @@
 	.particle-analysis-section .solution-analysis{grid-template-columns:1fr 1fr}.particle-analysis-section .solution-analysis>div:first-child{grid-column:1/-1}
 }
 
+@media (min-width:721px) and (max-width:900px){
+	.ollitaldry-solution-particle-size-control .solution-atomizers{grid-template-columns:repeat(2,minmax(0,1fr))}
+	.ollitaldry-solution-particle-size-control .solution-atomizers article{grid-template-columns:1fr}
+	.ollitaldry-solution-particle-size-control .solution-atomizers img{height:160px}
+}
+
 @media (max-width:720px){
+	.ollitaldry-solution-particle-size-control .solution-hero{background-position:right top;background-size:auto 48%}
+	.ollitaldry-solution-particle-size-control .solution-hero:before{background:linear-gradient(180deg,rgba(3,30,49,.02) 0 27%,rgba(3,30,49,.75) 45%,rgba(3,30,49,.98) 66%)}
+	.ollitaldry-solution-particle-size-control .solution-hero:after{background:none}
 	.heat-applications .solution-media-strip article{min-height:118px;padding:7px}.heat-applications .solution-media-strip img{height:72px}.heat-applications .solution-media-strip article:last-child{grid-column:1/-1}
 	.heat-risks .solution-icon-grid,.heat-quality .solution-icon-grid{grid-template-columns:1fr 1fr}.heat-risks .solution-icon-card:last-child,.heat-quality .solution-icon-card:last-child{grid-column:1/-1}
 	.heat-strategies .solution-feature-card+article{border-left:0;border-top:1px solid var(--sp-line)}
@@ -234,4 +800,243 @@
 	.solvent-recovery .solution-mini-equipment img{height:120px}
 	.ollitaldry-solution-particle-size-control .solution-atomizers article{grid-template-columns:40% 1fr}.ollitaldry-solution-particle-size-control .solution-atomizers img{height:145px}
 	.particle-analysis-section .solution-analysis{grid-template-columns:1fr}.particle-analysis-section .solution-analysis>div:first-child{grid-column:auto}
+}
+
+/* Heat-sensitive materials: reference-led process and validation layout. */
+.ollitaldry-solution-heat-sensitive-materials .heat-risks,
+.ollitaldry-solution-heat-sensitive-materials .heat-strategies,
+.ollitaldry-solution-heat-sensitive-materials .heat-control-section,
+.ollitaldry-solution-heat-sensitive-materials .heat-quality,
+.ollitaldry-solution-heat-sensitive-materials .heat-workflow,
+.ollitaldry-solution-heat-sensitive-materials .heat-comparison,
+.ollitaldry-solution-heat-sensitive-materials .heat-trusted{padding-top:25px;padding-bottom:25px;background:#fff}
+.ollitaldry-solution-heat-sensitive-materials .heat-risks .solution-heading,
+.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-heading,
+.ollitaldry-solution-heat-sensitive-materials .heat-control-section .solution-heading,
+.ollitaldry-solution-heat-sensitive-materials .heat-quality .solution-heading,
+.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-heading,
+.ollitaldry-solution-heat-sensitive-materials .heat-comparison .solution-heading,
+.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-heading{margin-bottom:17px;text-align:center}
+.ollitaldry-solution-heat-sensitive-materials .heat-risks .solution-heading h2,
+.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-heading h2,
+.ollitaldry-solution-heat-sensitive-materials .heat-control-section .solution-heading h2,
+.ollitaldry-solution-heat-sensitive-materials .heat-quality .solution-heading h2,
+.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-heading h2,
+.ollitaldry-solution-heat-sensitive-materials .heat-comparison .solution-heading h2,
+.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-heading h2{font-size:25px;line-height:1.22}
+.ollitaldry-solution-heat-sensitive-materials .heat-risks .solution-heading p,
+.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-heading p,
+.ollitaldry-solution-heat-sensitive-materials .heat-control-section .solution-heading p,
+.ollitaldry-solution-heat-sensitive-materials .heat-quality .solution-heading p,
+.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-heading p,
+.ollitaldry-solution-heat-sensitive-materials .heat-comparison .solution-heading p,
+.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-heading p{margin-top:5px;font-size:12px;line-height:1.5}
+
+.ollitaldry-solution-heat-sensitive-materials .heat-risks .solution-icon-grid,
+.ollitaldry-solution-heat-sensitive-materials .heat-quality .solution-icon-grid,
+.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-icon-grid{background:transparent;border-width:1px 0;border-color:#dbe6eb;border-radius:0}
+.ollitaldry-solution-heat-sensitive-materials .heat-risks .solution-icon-card,
+.ollitaldry-solution-heat-sensitive-materials .heat-quality .solution-icon-card{min-height:164px;padding:18px 20px;background:transparent}
+.ollitaldry-solution-heat-sensitive-materials .heat-risks .solution-icon-card>span,
+.ollitaldry-solution-heat-sensitive-materials .heat-quality .solution-icon-card>span{width:64px;height:64px;margin-bottom:10px;color:#087d8b;background:transparent}
+.ollitaldry-solution-heat-sensitive-materials .heat-risks .solution-icon-card .icon,
+.ollitaldry-solution-heat-sensitive-materials .heat-quality .solution-icon-card .icon{width:46px;height:46px;stroke-width:1.5}
+.ollitaldry-solution-heat-sensitive-materials .heat-risks .solution-icon-card h3,
+.ollitaldry-solution-heat-sensitive-materials .heat-quality .solution-icon-card h3{margin-bottom:6px;font-size:14px;line-height:1.25}
+.ollitaldry-solution-heat-sensitive-materials .heat-risks .solution-icon-card p,
+.ollitaldry-solution-heat-sensitive-materials .heat-quality .solution-icon-card p{max-width:190px;font-size:12px;line-height:1.5}
+
+.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-feature-grid{gap:0;overflow:hidden;background:#fff;border:1px solid #d7e4e9;border-radius:7px}
+.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-feature-card{min-height:158px;gap:22px;padding:24px 28px;border:0;border-radius:0}
+.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-feature-card+article{border-left:1px solid #d7e4e9}
+.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-feature-card>span{width:68px;height:68px;flex-basis:68px;color:#087d8b}
+.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-feature-card .icon{width:48px;height:48px;stroke-width:1.5}
+.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-feature-card h3{font-size:14px}
+.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-feature-card p{font-size:12px;line-height:1.62}
+
+.ollitaldry-solution-heat-sensitive-materials .heat-control-section .solution-control{grid-template-columns:minmax(270px,.88fr) minmax(470px,1.38fr) minmax(230px,.7fr);gap:28px;align-items:center;padding:2px 0 8px}
+.ollitaldry-solution-heat-sensitive-materials .heat-control__points{display:grid;align-content:center;gap:22px}
+.ollitaldry-solution-heat-sensitive-materials .heat-control__points article{display:grid;grid-template-columns:28px 1fr;gap:11px;align-items:start}
+.ollitaldry-solution-heat-sensitive-materials .heat-control__points article>span{width:24px;height:24px;display:grid;place-items:center;margin-top:1px;color:#fff;background:#087f8d;border-radius:50%}
+.ollitaldry-solution-heat-sensitive-materials .heat-control__points article>span .icon{width:14px;height:14px;stroke-width:2.5}
+.ollitaldry-solution-heat-sensitive-materials .heat-control-section .heat-control__points h3{margin:0 0 5px;padding:0;font-size:16px;line-height:1.3}
+.ollitaldry-solution-heat-sensitive-materials .heat-control-section .heat-control__points h3:before{display:none}
+.ollitaldry-solution-heat-sensitive-materials .heat-control-section .heat-control__points p{margin:0;padding:0;color:#516b79;font-size:13px;line-height:1.62}
+.ollitaldry-solution-heat-sensitive-materials .heat-control-section .solution-control__diagram{min-height:0;height:auto;display:block}
+.ollitaldry-solution-heat-sensitive-materials .heat-process-figure{position:relative;width:100%;height:auto;aspect-ratio:4/3;margin:0}
+.ollitaldry-solution-heat-sensitive-materials .heat-control-section .heat-process-figure img{position:absolute;inset:0;width:100%;max-width:none;height:100%;min-height:0;display:block;object-fit:contain;transform:none}
+.ollitaldry-solution-heat-sensitive-materials .heat-hotspot-lines{position:absolute;z-index:1;inset:0;width:100%;height:100%;overflow:visible;pointer-events:none}
+.ollitaldry-solution-heat-sensitive-materials .heat-hotspot-lines polyline{fill:none;stroke:#087d8b;stroke-width:2;stroke-linecap:round;stroke-linejoin:round;vector-effect:non-scaling-stroke}
+.ollitaldry-solution-heat-sensitive-materials .heat-hotspot-lines circle{fill:#fff;stroke:#087d8b;stroke-width:2.5;vector-effect:non-scaling-stroke}
+.ollitaldry-solution-heat-sensitive-materials .heat-callout{position:absolute;z-index:2;max-width:118px;color:#092b3e;font-size:12px;line-height:1.25}
+.ollitaldry-solution-heat-sensitive-materials .heat-callout b,
+.ollitaldry-solution-heat-sensitive-materials .heat-callout small{display:block;font-size:inherit}
+.ollitaldry-solution-heat-sensitive-materials .heat-callout b{font-weight:800}
+.ollitaldry-solution-heat-sensitive-materials .heat-callout small{margin-top:2px;font-weight:700}
+.ollitaldry-solution-heat-sensitive-materials .heat-callout:before,
+.ollitaldry-solution-heat-sensitive-materials .heat-callout:after{display:none}
+.ollitaldry-solution-heat-sensitive-materials .heat-callout--inlet{left:0;top:25%;text-align:right}
+.ollitaldry-solution-heat-sensitive-materials .heat-callout--atomizer,
+.ollitaldry-solution-heat-sensitive-materials .heat-callout--outlet,
+.ollitaldry-solution-heat-sensitive-materials .heat-callout--collection{right:0}
+.ollitaldry-solution-heat-sensitive-materials .heat-callout--atomizer{top:10%}
+.ollitaldry-solution-heat-sensitive-materials .heat-callout--outlet{top:38%}
+.ollitaldry-solution-heat-sensitive-materials .heat-callout--collection{bottom:4%}
+.ollitaldry-solution-heat-sensitive-materials .heat-operating-window{align-self:center;padding:23px 22px;background:#fff;border:1px solid #7fc4cd;border-radius:7px;box-shadow:0 8px 22px rgba(7,69,83,.07)}
+.ollitaldry-solution-heat-sensitive-materials .heat-operating-window h3{margin:0 0 16px;color:#087d8b;font-size:15px}
+.ollitaldry-solution-heat-sensitive-materials .heat-operating-window dl{display:block;margin:0}
+.ollitaldry-solution-heat-sensitive-materials .heat-operating-window dt{margin-top:10px;color:#284758;font-size:12px;line-height:1.35}
+.ollitaldry-solution-heat-sensitive-materials .heat-operating-window dt:first-child{margin-top:0}
+.ollitaldry-solution-heat-sensitive-materials .heat-operating-window dd{margin:2px 0 0;color:#092b3e;font-size:14px;font-weight:800}
+.ollitaldry-solution-heat-sensitive-materials .heat-operating-window>p{margin:18px 0 0;padding-top:14px;color:#69808d;border-top:1px solid #dbe7eb;font-size:11px;line-height:1.5}
+
+.ollitaldry-solution-heat-sensitive-materials .heat-quality .solution-icon-card{min-height:150px}
+.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-steps{overflow:visible;background:transparent;border:0;border-radius:0}
+.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-steps article{min-height:146px;padding:13px 24px 13px 50px;text-align:left;border:0}
+.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-steps article:not(:last-child):after{content:"\2192";right:-7px;top:24px;color:#53707e;background:transparent;font-size:23px}
+.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-steps span{position:absolute;top:11px;left:10px;width:28px;height:28px;margin:0;font-size:11px}
+.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-steps h3{margin:3px 0 7px;font-size:14px}
+.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-steps p{font-size:11px;line-height:1.55}
+
+.ollitaldry-solution-heat-sensitive-materials .heat-comparison__panel{padding:21px;background:#fff;border:1px solid #d7e4e9;border-radius:8px;box-shadow:0 8px 24px rgba(4,36,55,.05)}
+.ollitaldry-solution-heat-sensitive-materials .heat-comparison .solution-comparison-layout{grid-template-columns:minmax(0,1.55fr) minmax(290px,.68fr);gap:20px;align-items:stretch}
+.ollitaldry-solution-heat-sensitive-materials .heat-comparison .solution-table{font-size:11px}
+.ollitaldry-solution-heat-sensitive-materials .heat-comparison .solution-table th,
+.ollitaldry-solution-heat-sensitive-materials .heat-comparison .solution-table td{padding:8px 11px}
+.ollitaldry-solution-heat-sensitive-materials .heat-comparison .solution-table thead th{background:#eef4f6}
+.ollitaldry-solution-heat-sensitive-materials .heat-comparison .solution-table th:last-child,
+.ollitaldry-solution-heat-sensitive-materials .heat-comparison .solution-table td:last-child{color:#087d8b;background:#f0faf9;font-weight:700}
+.ollitaldry-solution-heat-sensitive-materials .heat-results{display:flex;flex-direction:column}
+.ollitaldry-solution-heat-sensitive-materials .heat-results h3{margin:2px 0 13px;text-align:center;color:#092b3e;font-size:16px}
+.ollitaldry-solution-heat-sensitive-materials .heat-results .solution-stat-grid{flex:1}
+.ollitaldry-solution-heat-sensitive-materials .heat-results .solution-stat-grid article{min-height:104px;padding:10px}
+.ollitaldry-solution-heat-sensitive-materials .heat-results .solution-stat-grid small{color:#627985;font-size:10px}
+.ollitaldry-solution-heat-sensitive-materials .heat-results .solution-stat-grid strong{font-size:27px;line-height:1.1}
+.ollitaldry-solution-heat-sensitive-materials .heat-results .solution-stat-grid span{font-size:10px}
+.ollitaldry-solution-heat-sensitive-materials .heat-results>p{margin:9px 0 0;text-align:center;color:#748a95;font-size:9px}
+
+.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-icon-grid{margin-bottom:0}
+.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-icon-card{min-height:112px;padding:14px 12px;background:transparent}
+.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-icon-card>span{width:43px;height:43px;margin-bottom:7px;color:#087d8b;background:transparent}
+.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-icon-card .icon{width:31px;height:31px;stroke-width:1.5}
+.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-icon-card h3{max-width:175px;margin:0;font-size:13px;line-height:1.35}
+.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-cta{min-height:132px;margin-top:20px;padding:25px 34px;background:linear-gradient(102deg,#04263c,#075f73)}
+.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-cta h2{font-size:24px}
+.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-cta p{font-size:12px;line-height:1.55}
+
+@media (min-width:1600px){
+	.ollitaldry-solution-heat-sensitive-materials .heat-control-section .solution-control{grid-template-columns:minmax(300px,.9fr) minmax(520px,1.4fr) minmax(250px,.7fr);gap:36px}
+}
+
+@media (max-width:1199px){
+	.ollitaldry-solution-heat-sensitive-materials .solution-hero{background-size:cover,auto 88%}
+	.ollitaldry-solution-heat-sensitive-materials .heat-control-section .solution-control{grid-template-columns:minmax(250px,.78fr) minmax(420px,1.22fr);gap:24px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-control-section .heat-operating-window{grid-column:1/-1;width:100%}
+	.ollitaldry-solution-heat-sensitive-materials .heat-operating-window dl{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-operating-window dt{margin-top:0}
+	.ollitaldry-solution-heat-sensitive-materials .heat-operating-window dd{grid-row:2}
+	.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-steps article{padding-right:16px;padding-left:42px}
+}
+
+@media (max-width:720px){
+	.ollitaldry-solution-heat-sensitive-materials .solution-hero{background-image:var(--solution-hero-image);background-position:right top;background-size:auto 48%;background-repeat:no-repeat}
+	.ollitaldry-solution-heat-sensitive-materials .solution-hero:before{background:linear-gradient(180deg,rgba(3,30,49,.04) 0 25%,rgba(3,30,49,.78) 46%,rgba(3,30,49,.98) 66%)}
+	.ollitaldry-solution-heat-sensitive-materials .solution-hero:after{background:none}
+	.ollitaldry-solution-heat-sensitive-materials .solution-hero__inner{padding-bottom:44px}
+	.ollitaldry-solution-heat-sensitive-materials .solution-hero__copy{width:92%}
+	.ollitaldry-solution-heat-sensitive-materials .heat-risks,
+	.ollitaldry-solution-heat-sensitive-materials .heat-strategies,
+	.ollitaldry-solution-heat-sensitive-materials .heat-control-section,
+	.ollitaldry-solution-heat-sensitive-materials .heat-quality,
+	.ollitaldry-solution-heat-sensitive-materials .heat-workflow,
+	.ollitaldry-solution-heat-sensitive-materials .heat-comparison,
+	.ollitaldry-solution-heat-sensitive-materials .heat-trusted{padding-top:21px;padding-bottom:21px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-risks .solution-heading h2,
+	.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-heading h2,
+	.ollitaldry-solution-heat-sensitive-materials .heat-control-section .solution-heading h2,
+	.ollitaldry-solution-heat-sensitive-materials .heat-quality .solution-heading h2,
+	.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-heading h2,
+	.ollitaldry-solution-heat-sensitive-materials .heat-comparison .solution-heading h2,
+	.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-heading h2{font-size:21px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-risks .solution-icon-card,
+	.ollitaldry-solution-heat-sensitive-materials .heat-quality .solution-icon-card{min-height:155px;padding:15px 10px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-risks .solution-icon-card p,
+	.ollitaldry-solution-heat-sensitive-materials .heat-quality .solution-icon-card p{font-size:11px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-feature-grid{grid-template-columns:1fr}
+	.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-feature-card{min-height:138px;padding:20px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-feature-card>span{width:58px;height:58px;flex-basis:58px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-feature-card .icon{width:42px;height:42px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-strategies .solution-feature-card+article{border-left:0;border-top:1px solid #d7e4e9}
+	.ollitaldry-solution-heat-sensitive-materials .heat-control-section .solution-control{grid-template-columns:1fr;gap:19px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-control__points{gap:16px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-control-section .heat-control__points h3{font-size:15px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-control-section .heat-control__points p{font-size:12px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-control-section .solution-control__diagram{height:auto;min-height:0}
+	.ollitaldry-solution-heat-sensitive-materials .heat-process-figure{height:auto;min-height:0}
+	.ollitaldry-solution-heat-sensitive-materials .heat-control-section .heat-process-figure img{width:100%;max-width:none;height:100%;min-height:0}
+	.ollitaldry-solution-heat-sensitive-materials .heat-callout{max-width:78px;font-size:9px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-control-section .heat-operating-window{grid-column:auto}
+	.ollitaldry-solution-heat-sensitive-materials .heat-operating-window dl{grid-template-columns:1fr 1fr}
+	.ollitaldry-solution-heat-sensitive-materials .heat-operating-window dd{grid-row:auto}
+	.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-steps{grid-template-columns:1fr}
+	.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-steps article{min-height:0;padding:11px 16px 18px 48px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-steps article:not(:last-child):after{content:"\2193";right:auto;top:auto;bottom:-7px;left:21px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-workflow .solution-steps span{left:8px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-comparison__panel{padding:12px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-comparison .solution-comparison-layout{grid-template-columns:1fr}
+	.ollitaldry-solution-heat-sensitive-materials .heat-comparison .solution-table-wrap{overflow-x:auto}
+	.ollitaldry-solution-heat-sensitive-materials .heat-comparison .solution-table{min-width:620px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-icon-grid{grid-template-columns:1fr 1fr}
+	.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-icon-card:last-child{grid-column:1/-1}
+	.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-cta{display:block;padding:24px 20px}
+	.ollitaldry-solution-heat-sensitive-materials .heat-trusted .solution-cta .button-row{margin-top:18px}
+}
+
+/* The solvent train is one continuous engineered system; keep the source image intact. */
+.ollitaldry-solution-organic-solvent-drying .solvent-process-flow{display:block;position:relative;padding:8px 0 5px;overflow:visible;background:#fff;border-top:1px solid #d6e3e8;border-bottom:1px solid #d6e3e8}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-equipment-frame{width:100%;aspect-ratio:1800/525;overflow:hidden}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-equipment{display:block;width:100%;height:auto;max-width:none;transform:translateY(-12.85%)}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-labels{display:grid;grid-template-columns:11.1fr 10fr 9.6fr 10fr 9.3fr 9.1fr 9.9fr 10.1fr;gap:0;margin:4px 0 0;text-align:center}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-flow .solvent-process-label{position:relative;display:block;min-width:0;min-height:0;padding:0 22px}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-label:not(:last-child):after{content:"\2192";position:absolute;z-index:2;top:-5px;right:-13px;width:26px;color:#6f93a4;font-size:22px;font-weight:400;line-height:1;text-align:center}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-label h3{min-height:0;margin:0;color:var(--navy-950);font-size:14px;line-height:1.35}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-label p{margin:7px 0 0;color:#627985;font-size:11px;line-height:1.45}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-flow .solvent-process-return{display:block;position:relative;right:auto;bottom:auto;left:auto;height:20px;margin:15px 7% 0;border:1px solid #69aeb8;border-top:0}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-flow .solvent-process-return:before{display:none}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-flow .solvent-process-return span{position:absolute;bottom:-10px;left:50%;padding:0 20px;color:#087f8d;background:#fff;font-size:14px;font-weight:700;line-height:1.4;white-space:nowrap;transform:translateX(-50%)}
+.ollitaldry-solution-organic-solvent-drying .solvent-process-flow .solvent-process-note{margin:15px 18px 0;color:#748995;font-size:11px;line-height:1.55;text-align:center}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-badge small{display:block;margin-top:3px;color:rgba(255,255,255,.72);font-size:11px;line-height:1.35}
+.ollitaldry-solution-organic-solvent-drying .solvent-ex-mark{width:52px;height:46px;display:grid;flex:0 0 52px;place-items:center;color:#171300;background:#f2c343;clip-path:polygon(25% 0,75% 0,100% 50%,75% 100%,25% 100%,0 50%);font-family:Georgia,serif;font-size:19px;font-weight:800;line-height:1;filter:drop-shadow(0 0 1px #111)}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-caption{gap:7px}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-checklist{display:grid;gap:7px;margin:0 0 18px;padding:0;list-style:none}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-checklist li{position:relative;padding-left:19px;color:#fff;font-size:12px;line-height:1.4}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-checklist li:before{content:"\2713";position:absolute;left:0;color:#50d2d7;font-size:14px;font-weight:800}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-caption>strong{order:1}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-caption>span{order:2}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-features article{display:flex;align-items:center;min-height:132px}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-features article>div{display:flex;align-self:stretch;flex-direction:column;justify-content:center}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-features h3{font-size:14px}
+.ollitaldry-solution-organic-solvent-drying .solvent-safety-features p{font-size:12px;line-height:1.5}
+
+@media (max-width:1199px){
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-labels{grid-template-columns:repeat(4,minmax(0,1fr));row-gap:16px;margin-top:10px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow .solvent-process-label{padding:10px 24px;border-top:1px solid #e1eaed}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-label:nth-child(4n):after{display:none}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-label:not(:last-child):after{top:6px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow .solvent-process-return{margin-top:12px}
+}
+
+@media (max-width:720px){
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow{padding:4px 0 8px;overflow:visible}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-equipment{width:100%;height:auto;min-height:0}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-labels{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:0;margin-top:8px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow .solvent-process-label{padding:10px 23px;border-top:1px solid #e1eaed}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-label:nth-child(odd){border-right:1px solid #e1eaed}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-label:nth-child(odd):after{display:block}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-label:nth-child(even):after{display:none}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-label h3{font-size:12px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-label p{margin-top:4px;font-size:10px}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow .solvent-process-return{display:block;height:auto;margin:14px 10px 0;border:0}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow .solvent-process-return span{position:static;display:block;padding:0;font-size:12px;line-height:1.45;text-align:center;white-space:normal;transform:none}
+	.ollitaldry-solution-organic-solvent-drying .solvent-process-flow .solvent-process-note{margin:14px 12px 0;font-size:10px}
 }

@@ -1,0 +1,67 @@
+{
+  "generator": "OpenAI built-in image_gen",
+  "date": "2026-09-04",
+  "usage": "AI-generated photorealistic illustrative scenes. Not verified photographs of OLLITAL premises, employees or certifications.",
+  "assets": [
+    {
+      "name": "factory",
+      "file": "factory.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: professional industrial company website card, landscape 3:2. Create a high-quality realistic documentary photograph of a modern spray drying equipment manufacturing workshop in China: stainless steel cylindrical drying chambers with conical bottoms, cyclone separators, organized fabrication stations, yellow overhead gantry crane, clean spacious factory with daylight through high windows. Physically plausible pipework and metal surfaces, detailed welds, restrained natural colors, crisp professional architectural photography, eye level 28mm view. Primary machinery centered and readable in a wide crop. No signage, no logos, no text, no watermark. This is a generic illustrative scene, not a specific company's real premises."
+    },
+    {
+      "name": "engineering",
+      "file": "engineering.webp",
+      "prompt": "Use case: photorealistic-natural. Website image for Engineering Excellence, landscape 3:2. A realistic Chinese mechanical engineer in navy work clothes at a clean engineering workstation, three-quarter rear view, reviewing a technically plausible 3D CAD model of a stainless steel spray drying system on two large monitors. Visible CAD geometry: tall cylindrical cone-bottom chamber, cyclone separator and connecting ductwork. Glass partition reveals an orderly equipment workshop beyond. Natural window light, sharp metal and fabric textures, restrained professional documentary photography, not a posed stock portrait. Main subject centered, room for bottom website caption outside image. No readable text, no logos, no watermark. Generic illustrative engineer, not a real company employee."
+    },
+    {
+      "name": "inspection",
+      "file": "inspection.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: landscape 3:2 website photograph for Quality Assurance at a spray drying equipment manufacturer. Close-medium documentary view of a Chinese quality engineer wearing clear safety glasses and navy work jacket, carefully measuring a stainless steel sanitary flange with a digital caliper on a clean inspection bench. Correct natural hands and instrument grip, flange holes, smooth machined metal and realistic brushed steel. Conical drying chamber and neat workshop visible behind, not dominant. Bright neutral daylight, crisp professional industrial photography, no colored filters. Subject and measuring work centered, can be cropped wide. No branding, no text, no certificates, no official seals, no watermark. Generic illustrative scene, not an actual named employee."
+    },
+    {
+      "name": "assembly",
+      "file": "assembly.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: landscape 3:2 industrial website card System Assembly. Realistic documentary photograph of two technicians in navy workwear and safety helmets assembling a medium-sized stainless steel spray dryer in a bright orderly factory. One tightens a sanitary clamp coupling, the other checks the assembly drawing on a tablet. Clear equipment geometry: cylindrical cone-bottom drying chamber, adjacent cyclone separator, stainless piping, compact frame and control cabinet. Physically credible scale and craftsmanship, beautiful detailed steel textures and natural light. Full system readable and centered, no dramatic dark scene, no brand logos, no readable text, no watermark. Generic industrial illustrative photograph, no specific company identity."
+    },
+    {
+      "name": "pharma",
+      "file": "pharma.webp",
+      "prompt": "Use case: product-mockup. Asset: photorealistic landscape 3:2 image for Pharmaceuticals industry card on a spray drying website. Premium realistic laboratory still life: a shallow glass dish of fine white pharmaceutical powder, several clean white tablets and two blue-and-white capsules on a polished light laboratory bench, a few small unlabelled glass sample vials behind. Clinical white and soft pale blue palette, realistic powder grain and glass refraction, controlled natural studio light, crisp macro detail. Centered horizontal arrangement, key objects in middle 55 percent of height for panoramic website crop. No readable writing, brands, package labels, hands or watermark. Actual photography style, not CGI."
+    },
+    {
+      "name": "food",
+      "file": "food.webp",
+      "prompt": "Use case: product-mockup. Asset: realistic landscape 3:2 industry website photograph, Food & Beverage spray drying applications. A tastefully arranged laboratory-food still life of pale milk protein powder in a shallow white ceramic bowl, a small glass of milk, a stainless ingredient scoop, a little golden fruit powder and a few fresh raspberries and green leaves. Bright hygienic tabletop with soft neutral lab background, authentic fine powder texture, natural daylight, restrained white and natural food colors, appetizing but industrial ingredient focus. Centered low horizontal composition in middle of image, readily readable as a wide website crop. Professional food photography, not CGI. No labels, no text, no watermark, no packaging logos."
+    },
+    {
+      "name": "nutra",
+      "file": "nutra.webp",
+      "prompt": "Use case: product-mockup. Asset: realistic landscape 3:2 professional industry website photograph for Nutraceuticals. Macro commercial photo of translucent golden softgel capsules beside a small clear glass dish of light tan herbal extract powder and a few fresh green botanical leaves. Refined clean laboratory bench, softly lit pale neutral background, highly realistic gelatin reflections, fine powder texture and organic leaf veins. Well-balanced horizontal grouping across the center, all key ingredients centered vertically for a wide card crop. Natural daylight, crisp premium photography, no CGI plastic look, no bottle labels, no text, no logos, no watermark."
+    },
+    {
+      "name": "chemicals",
+      "file": "chemicals.webp",
+      "prompt": "Use case: product-mockup. Asset: high quality photorealistic landscape 3:2 industry card for Chemicals on a spray drying website. A clean materials laboratory bench with three shallow glass sample dishes of finely milled industrial pigments: rich cobalt blue, terracotta red, and mineral white powder, with a small brushed stainless steel sampling spatula. One unlabelled glass beaker with pale blue liquid behind. Physically authentic powder texture, subtle reflections, professional macro product photography, bright neutral laboratory light, no fantasy crystals. Centered horizontal composition readable when cropped panoramic, moderate depth of field keeping all powder samples clear. No text, no logos, no watermark."
+    },
+    {
+      "name": "battery",
+      "file": "battery.webp",
+      "prompt": "Use case: product-mockup. Asset: realistic landscape 3:2 industrial website photograph for Battery Materials. Premium laboratory still life showing two shallow glass dishes of matte black graphite powder and charcoal-grey cathode precursor powder, a neat horizontal group of unbranded metallic cylindrical battery cells, and a small copper electrode foil strip. Clean pale gray technical laboratory bench, real fine powder grains and honest metal reflections, soft bright neutral light. Centered compact horizontal arrangement, key objects remain visible in a wide cropped card. High detail product photography, no neon glow, no dramatic dark background, no exploded science diagram, no labels, no text, no watermark."
+    },
+    {
+      "name": "specialty",
+      "file": "specialty.webp",
+      "prompt": "Use case: product-mockup. Asset: realistic landscape 3:2 industrial website image for Specialty Materials, spray dried technical ceramics and engineered powders. Premium close product photograph of a glass dish of ultrafine white ceramic powder, several precision white alumina ceramic rings and small tubes, and polished translucent glass material samples on a clean light grey laboratory table. Clear authentic textures, fine powder, matte ceramic and natural glass reflections. Sparse professional arrangement centered horizontally and vertically for a panoramic crop, bright soft daylight, neutral background with subtle laboratory context. No jewelry, no gemstones, no sci-fi glow, no text, no logos, no watermark. Convincing photography, not rendering."
+    },
+    {
+      "name": "quality",
+      "file": "quality.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: portrait 3:4 website photograph for Quality and Compliance in industrial equipment manufacturing. Overhead slightly angled professional photograph of an orderly inspection documentation desk: an open blue document folder with a neutral technical line drawing and simple inspection checklist grid, a digital caliper, a micrometer, a small polished stainless steel sanitary coupling and a pen. White desk, natural daylight, restrained blue and steel tones, realistic fine paper and metal textures, crisp authentic photography. Objects arranged close together and centered to remain recognizable in a narrow portrait card. Papers show only faint schematic lines and empty grid cells, NO legible text, NO signatures, NO stamps, NO certificates, NO ISO or CE logos, NO official seals, NO watermark. Generic quality documentation concept, not a certificate."
+    },
+    {
+      "name": "rd",
+      "file": "rd.webp",
+      "prompt": "Use case: photorealistic-natural. Asset: portrait 3:4 website image for R&D and Innovation at spray drying equipment company. Realistic professional photograph of an East Asian female application scientist in a white laboratory coat and clear safety glasses, three-quarter side view, adjusting a compact benchtop laboratory spray dryer with a glass drying chamber and cyclone, small sample collection flask and display. Clean bright research laboratory, naturally lit, fine equipment details, realistic tubing, focused scientific work rather than posing. Keep face, hands and equipment together in central portrait composition, authentic skin and glass textures. Generic fictional researcher, not an actual named employee. No logos, no readable text, no watermark, no glowing effects."
+    }
+  ]
+}

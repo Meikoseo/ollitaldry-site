@@ -114,8 +114,7 @@
       ['Feed Form', data.feed_form || 'Not sure'],
       ['Project Stage', data.project_stage || 'Not provided'],
       ['Target Capacity', data.target_capacity || 'Not sure'],
-      ['Target Particle Size', data.particle_size || 'Not sure'],
-      ['Country / Region', data.country || 'Not provided']
+      ['Target Particle Size', data.particle_size || 'Not sure']
     ];
     review.innerHTML = items.map(function (item) { return '<div><dt>' + escapeHtml(item[0]) + '</dt><dd>' + escapeHtml(item[1]) + '</dd></div>'; }).join('');
   }
@@ -177,5 +176,16 @@
   if (helpDetails && window.matchMedia('(max-width: 767px)').matches) helpDetails.open = false;
 
   restoreForm();
+  var resourceParams = new URLSearchParams(window.location.search);
+  if (resourceParams.get('request') === 'resource-updates') {
+    var resourceEmail = form.querySelector('[name="business_email"]');
+    var emailValue = resourceParams.get('email') || '';
+    var emailCheck = document.createElement('input');
+    emailCheck.type = 'email';
+    emailCheck.value = emailValue;
+    if (resourceEmail && emailValue && emailCheck.validity.valid) resourceEmail.value = emailValue;
+    var resourceMessage = form.querySelector('[name="message"]');
+    if (resourceMessage && !resourceMessage.value) resourceMessage.value = 'Please send me new resources and technical updates from OLLITAL.';
+  }
   showStep(currentStep);
 }());

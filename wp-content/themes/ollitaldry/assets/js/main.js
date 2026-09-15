@@ -10,8 +10,7 @@
 
   function updateHeader() {
     if (header) {
-      var overlaysHero = document.body.classList.contains('ollitaldry-home') || document.body.classList.contains('ollitaldry-scale-page') || document.body.classList.contains('ollitaldry-application-page') || document.body.classList.contains('ollitaldry-material-evaluation') || document.body.classList.contains('ollitaldry-product-series') || document.body.classList.contains('ollitaldry-laboratory-series-page') || document.body.classList.contains('ollitaldry-pilot-series-page') || document.body.classList.contains('ollitaldry-industrial-series-page') || document.body.classList.contains('ollitaldry-custom-system-page') || document.body.classList.contains('ollitaldry-accessories-page') || document.body.classList.contains('ollitaldry-solution-page');
-      header.classList.toggle('is-scrolled', window.scrollY > 80 || !overlaysHero);
+      header.classList.toggle('is-scrolled', window.scrollY > 80);
     }
   }
 
@@ -50,7 +49,16 @@
     });
 
     document.addEventListener('keydown', function (event) {
-      if (event.key === 'Escape' && navigation.classList.contains('is-open')) setMenuState(false);
+      if (event.key !== 'Escape') return;
+      if (navigation.classList.contains('is-open')) {
+        setMenuState(false);
+        return;
+      }
+      navigation.querySelectorAll('.has-children.is-open').forEach(function (item) {
+        item.classList.remove('is-open');
+        var parentLink = item.querySelector(':scope > a');
+        if (parentLink) parentLink.setAttribute('aria-expanded', 'false');
+      });
     });
 
     window.addEventListener('resize', function () {
@@ -60,7 +68,14 @@
     navigation.querySelectorAll('.has-children > a').forEach(function (link) {
 	  link.setAttribute('aria-expanded', 'false');
       link.addEventListener('click', function (event) {
-        if (window.matchMedia('(max-width: 960px)').matches) {
+        var isMobile = window.matchMedia('(max-width: 960px)').matches;
+        var isToggleOnly = link.hasAttribute('data-nav-parent-toggle');
+        if (isToggleOnly && !isMobile) {
+          event.preventDefault();
+          link.blur();
+          return;
+        }
+        if (isMobile) {
           var item = link.closest('.has-children');
 		  var willOpen = !item.classList.contains('is-open');
 		  event.preventDefault();
@@ -74,6 +89,27 @@
 		  item.classList.toggle('is-open', willOpen);
 		  link.setAttribute('aria-expanded', String(willOpen));
         }
+      });
+    });
+
+    navigation.querySelectorAll(':scope > ul > .nav-item').forEach(function (item) {
+      item.addEventListener('mouseenter', function () {
+        if (window.matchMedia('(max-width: 960px)').matches) return;
+        navigation.querySelectorAll('.has-children.is-open').forEach(function (openItem) {
+          if (openItem === item) return;
+          openItem.classList.remove('is-open');
+          var openLink = openItem.querySelector(':scope > a');
+          if (openLink) openLink.setAttribute('aria-expanded', 'false');
+        });
+      });
+    });
+
+    document.addEventListener('click', function (event) {
+      if (window.matchMedia('(max-width: 960px)').matches || navigation.contains(event.target)) return;
+      navigation.querySelectorAll('.has-children.is-open').forEach(function (item) {
+        item.classList.remove('is-open');
+        var parentLink = item.querySelector(':scope > a');
+        if (parentLink) parentLink.setAttribute('aria-expanded', 'false');
       });
     });
 

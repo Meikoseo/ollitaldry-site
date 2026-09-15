@@ -1,5 +1,4 @@
 .ollitaldry-product-series { background: #fff; }
-.ollitaldry-product-series .primary-navigation > ul > .nav-item:first-child > a { color: #57dbe0; }
 .series-page { overflow-x: clip; color: var(--body); background: #fff; }
 .series-page h1,
 .series-page h2,
@@ -7,11 +6,11 @@
 .series-mobile-filter { display: none; }
 
 .series-hero { position: relative; min-height: 570px; display: flex; align-items: stretch; overflow: hidden; color: #fff; background: var(--navy-950); isolation: isolate; }
-.series-hero__backdrop { position: absolute; inset: 0; z-index: -2; background-image: linear-gradient(90deg,rgba(3,27,43,.96) 0%,rgba(3,27,43,.82) 32%,rgba(3,27,43,.2) 58%,rgba(3,27,43,.08) 100%),url('https://meikoseo.github.io/ollitaldry-site/wp-content/themes/ollitaldry/assets/images/product-series-hero.webp'); background-position: center; background-size: cover; }
+.series-hero__backdrop { position: absolute; inset: 0; z-index: -2; background-image: linear-gradient(90deg,rgba(3,27,43,.96) 0%,rgba(3,27,43,.82) 32%,rgba(3,27,43,.2) 58%,rgba(3,27,43,.08) 100%),url('../images/product-series-hero.webp'); background-position: center; background-size: cover; }
 .series-hero::after { position: absolute; inset: auto 0 0; z-index: -1; height: 95px; content: ""; background: linear-gradient(transparent, rgba(3,27,43,.62)); }
-.series-hero__inner { display: flex; align-items: center; padding-top: 112px; }
-.series-hero__content { align-self: center; max-width: 620px; padding: 38px 0 48px; }
-.series-breadcrumb { display: flex; align-items: center; gap: 10px; margin-bottom: 31px; color: rgba(255,255,255,.7); font-size: 12px; }
+.series-hero__inner { position: relative; z-index: 1; min-height: inherit; display: grid; grid-template-rows: auto 1fr; align-items: stretch; padding-top: calc(var(--header-height) + 15px); padding-bottom: 25px; }
+.series-hero__content { align-self: center; max-width: 620px; padding: 20px 0 26px; }
+.series-breadcrumb { display: flex; align-items: center; gap: 10px; color: rgba(255,255,255,.7); font-size: 12px; }
 .series-breadcrumb a { color: inherit; }
 .series-breadcrumb a:hover { color: #72e3e6; }
 .series-hero .section-kicker { color: #52d7dc; }
@@ -249,7 +248,6 @@
 
 @media (max-width: 1180px) {
   .series-hero { min-height: 510px; }
-  .series-hero__inner { padding-top: 88px; }
   .series-hero__content { padding-bottom: 38px; }
   .series-hero h1 { font-size: 48px; }
   .series-toolbar__inner { grid-template-columns: minmax(240px,1fr) auto auto; }
@@ -265,7 +263,6 @@
 
 @media (max-width: 960px) {
   .series-hero { min-height: 500px; }
-  .series-hero__inner { padding-top: 88px; }
   .series-hero h1 { font-size: 42px; }
   .series-hero__content > strong { font-size: 15px; }
   .series-hero__content > p { font-size: 13px; }
@@ -336,10 +333,9 @@
 	.series-mobile-filter__help a { display: inline-flex; align-items: center; gap: 6px; color: var(--teal-700); font-size: 11px; font-weight: 800; }
 	.series-mobile-filter__help a .icon { width: 13px; height: 13px; }
   .series-hero { min-height: 590px; }
-  .series-hero__backdrop { background-image: linear-gradient(90deg,rgba(3,27,43,.97),rgba(3,27,43,.72)),url('https://meikoseo.github.io/ollitaldry-site/wp-content/themes/ollitaldry/assets/images/product-series-hero.webp'); background-position: 62% center; }
-  .series-hero__inner { display: flex; flex-direction: column; align-items: stretch; justify-content: center; padding-top: 76px; }
+  .series-hero__backdrop { background-image: linear-gradient(90deg,rgba(3,27,43,.97),rgba(3,27,43,.72)),url('../images/product-series-hero.webp'); background-position: 62% center; }
+  .series-hero__inner { display: grid; grid-template-rows: auto 1fr; align-items: stretch; padding-top: 82px; padding-bottom: 20px; }
   .series-hero__content { max-width: none; padding: 18px 0 0; }
-  .series-breadcrumb { margin-bottom: 19px; }
   .series-hero h1 { font-size: 39px; }
   .series-hero__content > p { margin: 13px 0 18px; }
   .series-toolbar { position: static; }
