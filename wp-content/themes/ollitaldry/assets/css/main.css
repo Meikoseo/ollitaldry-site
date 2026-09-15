@@ -1,5 +1,5 @@
-@font-face { font-family: "Inter"; src: url("../fonts/inter-latin.woff2") format("woff2"); font-style: normal; font-weight: 400 700; font-display: swap; }
-@font-face { font-family: "Manrope"; src: url("../fonts/manrope-latin.woff2") format("woff2"); font-style: normal; font-weight: 600 700; font-display: swap; }
+@font-face { font-family: "Inter"; src: url("https://meikoseo.github.io/ollitaldry-site/wp-content/themes/ollitaldry/assets/fonts/inter-latin.woff2") format("woff2"); font-style: normal; font-weight: 400 700; font-display: swap; }
+@font-face { font-family: "Manrope"; src: url("https://meikoseo.github.io/ollitaldry-site/wp-content/themes/ollitaldry/assets/fonts/manrope-latin.woff2") format("woff2"); font-style: normal; font-weight: 600 700; font-display: swap; }
 
 :root {
   --navy-950: #031b2b;
@@ -985,7 +985,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 	position: absolute;
 	z-index: -2;
 	inset: 0;
-	background: linear-gradient(rgba(3,27,43,.84),rgba(3,27,43,.9)),var(--applications-background,url("../images/hero-industrial.webp")) center 54% / cover no-repeat;
+	background: linear-gradient(rgba(3,27,43,.84),rgba(3,27,43,.9)),var(--applications-background,url("https://meikoseo.github.io/ollitaldry-site/wp-content/themes/ollitaldry/assets/images/hero-industrial.webp")) center 54% / cover no-repeat;
 }
 .applications-panel::after {
 	content: "";
@@ -995,7 +995,7 @@ ul { margin: 0; padding: 0; list-style: none; }
 	right: 22px;
 	width: 180px;
 	height: 44px;
-	background: url("../images/ollital-logo.webp") right center / contain no-repeat;
+	background: url("https://meikoseo.github.io/ollitaldry-site/wp-content/themes/ollitaldry/assets/images/ollital-logo.webp") right center / contain no-repeat;
 	filter: grayscale(1) brightness(2.5);
 	opacity: .07;
 }
@@ -1451,4 +1451,51 @@ ul { margin: 0; padding: 0; list-style: none; }
   .inquiry-direct,
   .field label { font-size: 15px; }
   .form-review-note { font-size: 13px; }
+}
+
+/* Homepage industry browser shared with the Applications overview. */
+.home-applications-browser {
+	--applications-navy: #00263d;
+	--applications-ink: #032b43;
+	--applications-teal: #009bb0;
+	--applications-line: #d5e1e7;
+	--applications-muted: #526b7d;
+	background: #f4f8fa;
+}
+.home-applications-browser .section-heading { margin-bottom: 30px; }
+.home-applications-browser .applications-industry-grid { grid-template-columns: repeat(7, minmax(0, 1fr)); }
+.home-applications-browser .applications-industry-card { min-height: 345px; }
+.home-applications-browser .applications-industry-card__body { padding-inline: 15px; }
+.home-applications-browser .applications-industry-card__body strong { font-size: 16px; }
+.home-applications-browser .applications-industry-card__body > span { font-size: 13px; }
+.home-applications-browser .applications-panel__action { margin-top: 28px; }
+
+/* The homepage keeps its dark closing band while sharing the Contact form. */
+.home-contact-consultation { padding-block: 56px !important; }
+.home-contact-consultation .company-contact-consultation { align-items: stretch; }
+.home-contact-consultation .company-consultation-card,
+.home-contact-consultation .company-contact-form { color: var(--company-ink); }
+
+.project-carousel__image { height: 145px; }
+.project-carousel__body { min-height: 104px; padding: 14px 12px 12px; }
+.project-carousel__body small { margin-top: 7px; color: #007f8d; font-weight: 750; }
+.project-carousel__body em { margin-top: auto; padding-top: 10px; align-items: flex-start; line-height: 1.35; }
+
+@media (max-width: 1500px) and (min-width: 1181px) {
+	.home-applications-browser .applications-industry-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+}
+
+@media (max-width: 1180px) {
+	.home-applications-browser .applications-industry-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+
+@media (max-width: 700px) {
+	.home-applications-browser .applications-industry-grid {
+		grid-template-columns: repeat(7, minmax(230px, 78vw));
+		overflow-x: auto;
+		padding: 2px 2px 16px;
+		scroll-snap-type: x mandatory;
+	}
+	.home-applications-browser .applications-industry-card { min-height: 340px; scroll-snap-align: start; }
+	.home-contact-consultation { padding-block: 42px !important; }
 }
