@@ -6,6 +6,21 @@
 	var storageKey = 'ollitaldryProductLayout';
 	var layouts = ['one', 'two', 'three'];
 
+	document.querySelectorAll('[data-product-clean-search]').forEach(function (form) {
+		form.addEventListener('submit', function (event) {
+			event.preventDefault();
+			var search = form.querySelector('[name="search"]');
+			var sort = form.querySelector('[name="sort"]');
+			var slug = function (value) {
+				return value.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+			};
+			var url = form.action.replace(/\/+$/, '') + '/';
+			if (search && search.value.trim()) url += 'search/' + encodeURIComponent(slug(search.value)) + '/';
+			if (sort && sort.value && sort.value !== 'recommended') url += 'sort/' + encodeURIComponent(sort.value) + '/';
+			window.location.assign(url);
+		});
+	});
+
 	if (!grid || !buttons.length) {
 		return;
 	}

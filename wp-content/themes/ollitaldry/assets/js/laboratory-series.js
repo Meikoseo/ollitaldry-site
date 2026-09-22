@@ -391,10 +391,9 @@ document.addEventListener('DOMContentLoaded', () => {
       if (event.key === 'Escape') closeLightbox();
     });
 
-    variantRoot?.querySelectorAll('[data-lab-variant-button]').forEach((button) => {
-      button.addEventListener('click', () => {
-        const nextVariant = button.dataset.labVariantButton;
-        if (!nextVariant || nextVariant === activeVariant) return;
+    const activateVariant = (nextVariant) => {
+        const targetButton = variantRoot?.querySelector(`[data-lab-variant-button="${nextVariant}"]`);
+        if (!nextVariant || !targetButton || nextVariant === activeVariant) return Boolean(targetButton);
         activeVariant = nextVariant;
         variantRoot.dataset.activeVariant = activeVariant;
         variantRoot.querySelectorAll('[data-lab-variant-button]').forEach((item) => {
@@ -411,8 +410,17 @@ document.addEventListener('DOMContentLoaded', () => {
         setThumbWindow(0, 'auto');
         active = -1;
         show(0, { direction: 1 });
+        return true;
+    };
+
+    variantRoot?.querySelectorAll('[data-lab-variant-button]').forEach((button) => {
+      button.addEventListener('click', () => {
+        activateVariant(button.dataset.labVariantButton);
       });
     });
+
+    const requestedVariant = new URLSearchParams(window.location.search).get('variant');
+    if (requestedVariant) activateVariant(requestedVariant);
   });
 
   document.querySelectorAll('[data-pilot-powder-carousel]').forEach((carousel) => {

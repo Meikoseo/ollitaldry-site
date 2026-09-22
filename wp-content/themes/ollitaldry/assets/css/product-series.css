@@ -18,6 +18,7 @@
 .series-hero__content > strong { display: block; color: #fff; font-family: Manrope,sans-serif; font-size: 18px; line-height: 1.45; }
 .series-hero__content > p { max-width: 580px; margin: 17px 0 26px; color: rgba(255,255,255,.78); font-size: 16px; line-height: 1.75; }
 .series-hero__actions { display: flex; gap: 12px; }
+.series-hero__actions button.button { font-family: inherit; cursor: pointer; }
 
 .series-toolbar { position: relative; z-index: 6; padding: 16px 0; background: #fff; border-bottom: 1px solid var(--line); box-shadow: 0 7px 24px rgba(6,38,59,.06); }
 .series-toolbar__inner { display: grid; grid-template-columns: minmax(260px,1fr) auto auto; align-items: center; gap: 14px; }
@@ -194,7 +195,7 @@
 .series-comparison tbody td:nth-child(2) { color: var(--navy-900); background: #eff9f9; font-weight: 700; }
 .series-comparison__benefit { display: grid; grid-template-columns: 14px minmax(0,1fr); align-items: start; gap: 7px; }
 .series-comparison__benefit .icon { width: 14px; height: 14px; margin-top: 2px; color: var(--teal-700); }
-.series-comparison__note { grid-column: 2; grid-row: 3; margin: -5px 3px 0; color: #71818d; font-size: 11px; line-height: 1.55; }
+.series-comparison__note { grid-column: 2; grid-row: 3; margin: 0px 3px 0; color: #71818d; font-size: 11px; line-height: 1.55; }
 
 .series-testing { padding: 0 0 74px; background: #f5f8fa; }
 .series-testing__inner { min-height: 330px; display: grid; grid-template-columns: 37% minmax(0,1fr) 220px; align-items: stretch; overflow: hidden; color: rgba(255,255,255,.78); background: var(--navy-900); border-radius: 6px; }
@@ -218,6 +219,8 @@
 .series-case-card__image { height: 175px; display: block; overflow: hidden; }
 .series-case-card__image img { width: 100%; height: 100%; object-fit: cover; }
 .series-case-card__body { flex: 1; display: flex; flex-direction: column; padding: 19px; }
+.series-case-card__location { display: flex; align-items: center; gap: 7px; margin: 0 0 7px; color: #526d7d; font-size: 11px; font-style: normal; font-weight: 700; line-height: 1.4; }
+.series-case-card__flag { flex: 0 0 auto; font-size: 17px; line-height: 1; }
 .series-case-card__body small { color: var(--teal-700); font-size: 9px; font-weight: 800; text-transform: uppercase; }
 .series-case-card__body h3 { margin: 7px 0 8px; color: var(--navy-900); font-size: 16px; }
 .series-case-card__body p { margin: 0 0 14px; font-size: 11px; line-height: 1.55; }
@@ -332,7 +335,7 @@
 	.series-mobile-filter__help p { margin: 6px 0 10px; font-size: 11px; line-height: 1.55; }
 	.series-mobile-filter__help a { display: inline-flex; align-items: center; gap: 6px; color: var(--teal-700); font-size: 11px; font-weight: 800; }
 	.series-mobile-filter__help a .icon { width: 13px; height: 13px; }
-  .series-hero { min-height: 590px; }
+  .series-hero { min-height: 490px; }
   .series-hero__backdrop { background-image: linear-gradient(90deg,rgba(3,27,43,.97),rgba(3,27,43,.72)),url('https://meikoseo.github.io/ollitaldry-site/wp-content/themes/ollitaldry/assets/images/product-series-hero.webp'); background-position: 62% center; }
   .series-hero__inner { display: grid; grid-template-rows: auto 1fr; align-items: stretch; padding-top: 82px; padding-bottom: 20px; }
   .series-hero__content { max-width: none; padding: 18px 0 0; }

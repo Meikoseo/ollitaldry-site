@@ -80,6 +80,61 @@
     });
   });
 
+  document.querySelectorAll('[data-resource-subscription-form]').forEach(function (form) {
+    form.addEventListener('submit', function (event) {
+      event.preventDefault();
+      var status = form.querySelector('[data-resource-subscription-status]');
+      var button = form.querySelector('button[type="submit"]');
+      var email = form.querySelector('[name="business_email"]');
+      var data = new FormData(form);
+      data.set('source_url', window.location.href);
+      if (button) {
+        button.disabled = true;
+        button.setAttribute('aria-busy', 'true');
+      }
+      if (status) {
+        status.hidden = false;
+        status.className = 'resources-newsletter-status is-sending';
+        status.textContent = 'Submitting your subscription...';
+      }
+
+      publicIpReady().then(function () {
+        var ipField = form.querySelector('[data-ollital-client-ip]');
+        if (ipField && ipField.value) data.set('client_public_ip', ipField.value);
+        return refreshSecurityToken(form, data);
+      }).then(function () {
+        return fetch(window.ollitalInquiries.ajaxUrl, {
+          method: 'POST',
+          credentials: 'same-origin',
+          body: data
+        });
+      }).then(function (response) {
+        return response.json().then(function (json) {
+          if (!response.ok || !json.success) throw json;
+          return json.data;
+        });
+      }).then(function (result) {
+        if (status) {
+          status.className = 'resources-newsletter-status is-success';
+          status.textContent = result.message;
+        }
+        if (email) email.value = '';
+        if (window.dataLayer) window.dataLayer.push({ event: 'resource_subscription_submitted', inquiry_reference: result.reference });
+      }).catch(function (error) {
+        var result = error && error.data ? error.data : {};
+        if (status) {
+          status.className = 'resources-newsletter-status is-error';
+          status.textContent = result.message || 'The subscription could not be submitted. Please try again.';
+        }
+      }).finally(function () {
+        if (button) {
+          button.disabled = false;
+          button.removeAttribute('aria-busy');
+        }
+      });
+    });
+  });
+
   function preparePublicIp() {
     var fields = document.querySelectorAll('[data-ollital-client-ip]');
     if (!fields.length) return;

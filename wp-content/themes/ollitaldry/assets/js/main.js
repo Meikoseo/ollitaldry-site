@@ -453,6 +453,108 @@
     });
   });
 
+  var floatingInquiryDialog = document.querySelector('[data-floating-inquiry-dialog]');
+  var floatingInquiryOpeners = Array.from(document.querySelectorAll('[data-floating-inquiry-open]'));
+  if (floatingInquiryDialog && floatingInquiryOpeners.length) {
+    var floatingInquiryClose = floatingInquiryDialog.querySelector('[data-floating-inquiry-close]');
+    var floatingInquiryActiveTrigger = null;
+
+    function prepareFloatingInquiry(trigger) {
+      var form = floatingInquiryDialog.querySelector('[data-company-contact-form]');
+      var requestedType = trigger.getAttribute('data-inquiry-intent') || 'recommendation';
+      var typeInput;
+      var productInput;
+      var productTitle;
+      var productModel;
+      var productInterest;
+			var messageInput;
+			var requirementValue;
+
+      if (!form) return;
+			form.querySelectorAll('[name="message"][data-inquiry-autofilled="true"]').forEach(function (input) {
+				input.value = '';
+				input.removeAttribute('data-inquiry-autofilled');
+				input.dispatchEvent(new Event('input', { bubbles: true }));
+			});
+
+      typeInput = form.querySelector('input[name="product_interest"][data-inquiry-type="' + requestedType + '"]');
+      if (typeInput) {
+        typeInput.checked = true;
+        typeInput.dispatchEvent(new Event('change', { bubbles: true }));
+      }
+
+      productInput = form.querySelector('[name="product_model"]');
+      if (!productInput) return;
+
+      if (requestedType === 'price') {
+        productTitle = (trigger.getAttribute('data-inquiry-product-title') || '').trim();
+        productModel = (trigger.getAttribute('data-inquiry-product-model') || '').trim();
+        productInterest = productTitle;
+        if (productModel && productModel.toLowerCase() !== productTitle.toLowerCase()) {
+          productInterest += (productInterest ? ' \u2014 ' : '') + productModel;
+        }
+        productInput.value = productInterest || productModel;
+        productInput.setAttribute('data-product-autofilled', 'true');
+        productInput.dispatchEvent(new Event('input', { bubbles: true }));
+      } else if (productInput.getAttribute('data-product-autofilled') === 'true') {
+        productInput.value = '';
+        productInput.removeAttribute('data-product-autofilled');
+        productInput.dispatchEvent(new Event('input', { bubbles: true }));
+      }
+
+			requirementValue = (trigger.getAttribute('data-inquiry-requirement') || '').trim();
+			messageInput = form.querySelector('[data-inquiry-panel="' + requestedType + '"] [name="message"]');
+			if (messageInput && requirementValue) {
+				messageInput.value = requirementValue;
+				messageInput.setAttribute('data-inquiry-autofilled', 'true');
+				messageInput.dispatchEvent(new Event('input', { bubbles: true }));
+			}
+    }
+
+    function openFloatingInquiry(event) {
+      if (event.currentTarget.tagName === 'A') event.preventDefault();
+      var parentDialog = event.currentTarget.closest('dialog[open]');
+      if (parentDialog && parentDialog !== floatingInquiryDialog) {
+        if (typeof parentDialog.close === 'function') parentDialog.close();
+        else parentDialog.removeAttribute('open');
+      }
+      floatingInquiryActiveTrigger = event.currentTarget;
+      prepareFloatingInquiry(floatingInquiryActiveTrigger);
+      if (typeof floatingInquiryDialog.showModal === 'function') {
+        floatingInquiryDialog.showModal();
+      } else {
+        floatingInquiryDialog.setAttribute('open', '');
+      }
+      document.body.classList.add('inquiry-dialog-open');
+      floatingInquiryOpeners.forEach(function (opener) {
+        opener.setAttribute('aria-expanded', opener === floatingInquiryActiveTrigger ? 'true' : 'false');
+      });
+      if (floatingInquiryClose) floatingInquiryClose.focus();
+    }
+
+    function closeFloatingInquiry() {
+      if (typeof floatingInquiryDialog.close === 'function') floatingInquiryDialog.close();
+      else floatingInquiryDialog.removeAttribute('open');
+    }
+
+    floatingInquiryOpeners.forEach(function (opener) {
+      opener.addEventListener('click', openFloatingInquiry);
+    });
+    if (floatingInquiryClose) floatingInquiryClose.addEventListener('click', closeFloatingInquiry);
+    floatingInquiryDialog.addEventListener('click', function (event) {
+      if (event.target === floatingInquiryDialog) closeFloatingInquiry();
+    });
+    floatingInquiryDialog.addEventListener('close', function () {
+      document.body.classList.remove('inquiry-dialog-open');
+      floatingInquiryOpeners.forEach(function (opener) { opener.setAttribute('aria-expanded', 'false'); });
+      if (floatingInquiryActiveTrigger && document.contains(floatingInquiryActiveTrigger)) floatingInquiryActiveTrigger.focus();
+    });
+    floatingInquiryDialog.addEventListener('cancel', function () {
+      document.body.classList.remove('inquiry-dialog-open');
+      floatingInquiryOpeners.forEach(function (opener) { opener.setAttribute('aria-expanded', 'false'); });
+    });
+  }
+
   var backToTop = document.querySelector('[data-back-to-top]');
   if (backToTop) {
     function updateBackToTop() {

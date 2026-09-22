@@ -107,7 +107,7 @@
 .pilot-final-cta__icon .icon { width:30px; height:30px; }
 .pilot-final-cta h2 { margin:0 0 5px; color:#fff; font-size:22px; }
 .pilot-final-cta p { margin:0; color:rgba(255,255,255,.75); font-size:10px; }
-.pilot-final-cta .button { min-width:150px; font-size:9px; }
+.pilot-final-cta .button { min-width:150px; font-size:11px; }
 
 @media (min-width:1600px) {
 	.pilot-framed-section > h2,.pilot-data-panel > h2,.pilot-results h2,.pilot-comparison h2,.pilot-faq > h2 { font-size:21px; }

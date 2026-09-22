@@ -45,6 +45,16 @@
 		var pageSize = 4;
 		var visibleLimit = pageSize;
 		if (!group || !items.length || !more) return;
+		var initialType = new URLSearchParams(window.location.search).get('type');
+		var initialButton = initialType ? group.querySelector('button[data-filter="' + initialType + '"]') : null;
+		if (initialButton) {
+			group.querySelectorAll('button[data-filter]').forEach(function (item) {
+				item.classList.remove('is-active');
+				item.setAttribute('aria-pressed', 'false');
+			});
+			initialButton.classList.add('is-active');
+			initialButton.setAttribute('aria-pressed', 'true');
+		}
 
 		var updateProjects = function () {
 			var active = group.querySelector('button.is-active[data-filter]');
@@ -150,11 +160,25 @@
 		var reset = page.querySelector('[data-resource-reset]');
 		var more = page.querySelector('[data-resource-more]');
 		var empty = page.querySelector('[data-resource-empty]');
-		var filter = 'all';
-		var initialType = new URLSearchParams(window.location.search).get('type');
-		if (['brochure', 'article', 'video', 'case', 'webinar'].indexOf(initialType) !== -1) filter = initialType;
+		var filter = page.getAttribute('data-resource-initial-type') || 'all';
+		var initialSearch = page.getAttribute('data-resource-initial-search') || '';
+		var initialSort = page.getAttribute('data-resource-initial-sort') || 'featured';
+		var baseUrl = (page.getAttribute('data-resource-base-url') || '/resources/').replace(/\/+$/, '') + '/';
 		var visibleLimit = 8;
 		search.setAttribute('autocomplete', 'off');
+		search.value = initialSearch;
+		sort.value = ['featured', 'type', 'title'].indexOf(initialSort) !== -1 ? initialSort : 'featured';
+
+		function syncUrl() {
+			var slug = function (value) {
+				return value.trim().toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+			};
+			var url = baseUrl;
+			if (filter !== 'all') url += 'type/' + encodeURIComponent(filter) + '/';
+			if (search.value.trim()) url += 'search/' + encodeURIComponent(slug(search.value)) + '/';
+			if (sort.value !== 'featured') url += 'sort/' + encodeURIComponent(sort.value) + '/';
+			if (window.location.href !== url && window.history && window.history.replaceState) window.history.replaceState(null, '', url);
+		}
 
 		function update() {
 			var query = search.value.trim().toLowerCase();
@@ -167,7 +191,7 @@
 			}
 			var matches = ordered.filter(function (item) {
 				var type = item.getAttribute('data-filter-item');
-				return (filter === 'all' || type === filter || (filter === 'media' && (type === 'video' || type === 'webinar'))) && (!query || item.getAttribute('data-search-text').toLowerCase().indexOf(query) !== -1);
+				return (filter === 'all' || type === filter || (filter === 'media' && type === 'video')) && (!query || item.getAttribute('data-search-text').toLowerCase().indexOf(query) !== -1);
 			});
 			var limit = visibleLimit;
 			ordered.forEach(function (item) {
@@ -186,6 +210,7 @@
 			reset.hidden = filter === 'all' && !query && sort.value === 'featured';
 			more.hidden = visible >= matches.length;
 			more.parentElement.hidden = more.hidden;
+			syncUrl();
 		}
 		group.addEventListener('click', function (event) {
 			var button = event.target.closest('button[data-filter]');
@@ -224,18 +249,29 @@
 			var trigger = null;
 			var video = dialog.querySelector('video');
 			var error = dialog.querySelector('.resources-media-error');
-			page.querySelectorAll('[data-resource-media-open="' + dialog.id + '"]').forEach(function (button) {
-				button.addEventListener('click', function () {
-					trigger = button;
-					if (video) {
-						error.hidden = true;
-						video.src = video.getAttribute('data-resource-video-src');
-						video.load();
-					}
-					dialog.showModal();
-					document.body.classList.add('resources-media-modal-open');
-					dialog.querySelector('[data-resource-media-close]').focus();
+			function openDialog(opener) {
+				trigger = opener;
+				if (video) {
+					error.hidden = true;
+					video.src = video.getAttribute('data-resource-video-src');
+					video.load();
+				}
+				dialog.showModal();
+				document.body.classList.add('resources-media-modal-open');
+				dialog.querySelector('[data-resource-media-close]').focus();
+			}
+			page.querySelectorAll('[data-resource-media-open="' + dialog.id + '"]').forEach(function (opener) {
+				opener.addEventListener('click', function (event) {
+					if (opener.tagName === 'A') event.preventDefault();
+					openDialog(opener);
 				});
+				if (opener.getAttribute('role') === 'button' && opener.tagName !== 'BUTTON') {
+					opener.addEventListener('keydown', function (event) {
+						if (event.key !== 'Enter' && event.key !== ' ') return;
+						event.preventDefault();
+						openDialog(opener);
+					});
+				}
 			});
 			if (video) video.addEventListener('error', function () { if (dialog.open && video.hasAttribute('src')) error.hidden = false; });
 			dialog.querySelector('[data-resource-media-close]').addEventListener('click', function () { dialog.close(); });

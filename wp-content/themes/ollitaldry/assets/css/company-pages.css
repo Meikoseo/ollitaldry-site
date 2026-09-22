@@ -184,11 +184,16 @@
 .company-quality__image { display: block; width: 100%; max-height: 210px; object-fit: contain; }
 .company-quality__symbol { display: grid; place-items: center; color: var(--company-teal); }
 .company-quality__symbol .icon { width: 70px; height: 90px; stroke-width: 1.2; }
-.company-lower--about .company-leadership__people { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; margin-top: 0; }
+.company-lower--about .company-leadership__people { display: grid; grid-template-columns: repeat(auto-fit, minmax(110px, 1fr)); gap: 12px; margin-top: 0; }
 .company-lower--about .company-leadership figure { display: flex; flex-direction: column; align-items: stretch; gap: 10px; min-width: 0; text-align: center; }
-.company-lower--about .company-leadership figure > span, .company-lower--about .company-leadership figure > img { width: 100%; height: auto; max-height: 132px; aspect-ratio: 1; border-radius: 6px; object-fit: cover; color: #548092; background: #edf4f7; }
+.company-lower--about .company-leadership figure > span, .company-lower--about .company-leadership figure > img { height: 132px; border-radius: 6px; color: #548092; background: #edf4f7; }
+.company-lower--about .company-leadership figure > span { width: 100%; }
+.company-lower--about .company-leadership figure > img { display: block; margin-inline: auto; object-fit: contain; object-position: center; }
 .company-lower--about .company-leadership figure > span .icon { width: 42px; height: 42px; stroke-width: 1.2; }
 .company-lower--about .company-leadership figcaption { overflow-wrap: anywhere; }
+.company-lower--about .company-leadership__role, .company-lower--about .company-leadership__name { display: block; }
+.company-lower--about .company-leadership__role { line-height: 1.35; }
+.company-lower--about .company-leadership__name { margin-top: 4px; font-size: 16px; line-height: 1.35; }
 .company-lower--about .company-rd { grid-column: auto; padding: 24px !important; }
 .company-lower--about .company-rd__body { display: grid; grid-template-columns: minmax(0, 1fr) minmax(90px, .68fr); gap: 16px; align-items: start; }
 .company-lower--about .company-rd p { margin: 0; }
@@ -200,6 +205,16 @@
 @media (max-width: 1400px) and (min-width: 821px) {
 	.company-lower--about .company-lower__grid { grid-template-columns: minmax(0, 1fr) minmax(0, 1.5fr) minmax(0, 1fr); }
 	.company-lower--about article, .company-lower--about .company-rd { padding: 18px !important; }
+}
+@media (min-width: 1181px) and (max-width: 1500px) {
+	.company-lower--about article { gap: 16px; }
+	.company-lower--about article h2 { font-size: 21px; line-height: 1.25; }
+	.company-lower--about .company-kicker { font-size: 12px; }
+	.company-lower--about .company-checks li,
+	.company-lower--about .company-rd p { font-size: 14px; line-height: 1.5; }
+	.company-lower--about .company-leadership strong { font-size: 15px; line-height: 1.4; }
+	.company-lower--about .company-leadership small { font-size: 13px; line-height: 1.4; }
+	.company-lower--about .company-text-link { font-size: 14px; }
 }
 @media (max-width: 1180px) {
 	.company-lower--about .company-lower__grid { grid-template-columns: 1fr; }
@@ -310,6 +325,7 @@
 .company-form-status.is-error { padding: 13px 15px; color: #9e2e2e; background: #fff0f0; }
 .ollital-inquiry-trap { position: absolute !important; left: -9999px !important; }
 
+.company-locations { scroll-margin-top: 90px; }
 .company-locations__grid { display: grid; grid-template-columns: minmax(280px, .58fr) minmax(0, 1.42fr); min-height: 410px; overflow: hidden; border: 1px solid var(--company-line); border-radius: 8px; background: #fff; }
 .company-location-list { display: grid; grid-template-rows: repeat(3, 1fr); border-right: 1px solid var(--company-line); background: #fff; }
 .company-location-card { position: relative; display: grid; width: 100%; min-width: 0; grid-template-columns: 44px minmax(0, 1fr); align-items: start; gap: 0 16px; padding: 20px 24px; border: 0; border-bottom: 1px solid var(--company-line); border-radius: 0; color: inherit; text-align: left; font: inherit; background: #fff; appearance: none; }
@@ -467,7 +483,7 @@ button.company-location-card.is-active { box-shadow: inset 3px 0 0 var(--company
 @media (max-width: 560px) {
 	.company-container { width: calc(100% - 24px); }
 	.company-heading h2, .company-section h2 { font-size: 27px; }
-	.company-hero, .company-hero__inner { min-height: 620px; }
+	.company-hero, .company-hero__inner { min-height: 550px; }
 	.company-hero::before { background-position: 64% center; }
 	.company-hero__copy h1 { font-size: 39px; }
 	.company-hero__copy p { font-size: 15px; }

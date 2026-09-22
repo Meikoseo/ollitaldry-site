@@ -88,15 +88,8 @@ html { overflow-x: hidden; }
 .app-material-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 12px; }
 .app-material-card { min-width: 0; overflow: hidden; border: 1px solid var(--app-line); border-radius: 4px; background: #fff; }
 .app-material-card[hidden] { display: none; }
-.app-material-card a { display: block; height: 100%; color: inherit; }
 .app-material-card__image { position: relative; aspect-ratio: 3 / 2; overflow: hidden; background: #eef2f4; }
 .app-material-card__image img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.app-material-card__image::after { position: absolute; top: -25%; bottom: -25%; left: -55%; width: 34%; content: ""; background: linear-gradient(105deg, rgba(255,255,255,0) 0%, rgba(255,255,255,.18) 35%, rgba(255,255,255,.72) 50%, rgba(255,255,255,.16) 65%, rgba(255,255,255,0) 100%); pointer-events: none; transform: skewX(-16deg); }
-.app-material-card:hover .app-material-card__image::after,
-.app-material-card:focus-within .app-material-card__image::after { animation: app-material-shine .72s cubic-bezier(.2,.68,.3,1); }
-@keyframes app-material-shine {
-  to { left: 125%; }
-}
 .app-material-card span,
 .app-material-card h3,
 .app-material-card p { display: block; margin-inline: 14px; }
@@ -158,23 +151,12 @@ html { overflow-x: hidden; }
 .app-scale-card__link { display: flex; min-height: 47px; align-items: center; justify-content: center; gap: 10px; border-top: 1px solid var(--app-line); color: var(--app-teal-dark); font-size: 11px; font-weight: 800; text-transform: uppercase; }
 .app-scale-card__link .icon { width: 15px; height: 15px; }
 .app-scale-card__link:hover { background: #f1fafa; }
-.app-solution-card dl,
 .app-case-card dl { margin: 0; }
-.app-solution-card dt,
 .app-case-card dt { color: var(--app-teal-dark); font-size: 10px; font-weight: 800; text-transform: uppercase; }
-.app-solution-card dd,
 .app-case-card dd { margin: 3px 0 0; color: var(--app-muted); font-size: 12px; line-height: 1.5; }
 
 /* Solutions */
 .app-solutions { background: var(--app-soft); }
-.app-solutions-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; }
-.app-solution-card { display: grid; grid-template-columns: 42% 1fr; min-height: 280px; overflow: hidden; border: 1px solid var(--app-line); background: #fff; }
-.app-solution-card__image { min-width: 0; }
-.app-solution-card__image img { display: block; width: 100%; height: 100%; object-fit: cover; }
-.app-solution-card__body { display: flex; min-width: 0; flex-direction: column; padding: 20px; }
-.app-solution-card h3 { margin: 0 0 14px; font-size: 17px; line-height: 1.25; }
-.app-solution-card dl div { margin-bottom: 9px; }
-.app-solution-card .app-text-link { margin-top: auto; padding-top: 10px; font-size: 12px; }
 
 /* Evaluation and powder properties */
 .app-evaluation { background: #fff; }
@@ -211,8 +193,10 @@ html { overflow-x: hidden; }
 .app-case-card__image { width: 100%; aspect-ratio: 3 / 2; overflow: hidden; background: var(--app-soft); }
 .app-case-card__image img { display: block; width: 100%; height: 100%; object-fit: cover; pointer-events: none; }
 .app-case-card__body { display: flex; min-width: 0; flex: 1; flex-direction: column; padding: 18px; }
+.app-case-card__location { display: flex; min-height: 18px; align-items: center; gap: 7px; color: var(--app-muted); font-size: 10px; font-weight: 700; line-height: 1.4; }
+.app-case-card__location span { font-size: 16px; line-height: 1; }
 .app-case-label { color: var(--app-teal-dark); font-size: 9px; font-weight: 800; text-transform: uppercase; }
-.app-case-card h3 { margin: 5px 0 13px; font-size: 15px; }
+.app-case-card h3 { margin: 8px 0 13px; font-size: 15px; }
 .app-case-card dl { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px; }
 .app-case-card .app-text-link { margin-top: auto; padding-top: 15px; font-size: 11px; }
 .app-case-carousel__control { position: absolute; z-index: 4; top: 50%; display: grid; width: 42px; height: 42px; place-items: center; border: 1px solid var(--app-line); border-radius: 50%; color: var(--app-teal-dark); background: #fff; box-shadow: 0 7px 20px rgba(3,36,54,.14); opacity: 0; pointer-events: none; cursor: pointer; transform: translateY(-50%); transition: color .2s ease, background-color .2s ease, border-color .2s ease, opacity .2s ease; }
@@ -233,29 +217,11 @@ html { overflow-x: hidden; }
 .app-faq details > div { padding: 0 16px 14px; }
 .app-faq details p { margin: 0; font-size: 12px; line-height: 1.6; }
 
-/* Inquiry */
-.app-inquiry { padding: 62px 0; color: #fff; background: var(--app-navy); }
-.app-inquiry__grid { display: grid; grid-template-columns: minmax(320px, .7fr) minmax(600px, 1.3fr); gap: 46px; align-items: center; }
-.app-inquiry h2 { margin: 8px 0 14px; color: #fff; font-size: 32px; }
-.app-inquiry__intro > p { max-width: 560px; margin: 0 0 22px; color: #c7d6df; font-size: 14px; line-height: 1.65; }
-.app-inquiry__intro ul { display: grid; gap: 10px; margin: 0 0 25px; padding: 0; list-style: none; color: #d7e3e9; font-size: 12px; }
-.app-inquiry__intro li { display: flex; gap: 9px; align-items: flex-start; }
-.app-inquiry__intro li .icon { color: #41c7cb; }
-.app-inquiry__steps { display: flex; flex-wrap: wrap; gap: 5px; }
-.app-inquiry__steps span { padding: 7px 9px; border: 1px solid rgba(255,255,255,.2); color: #cfe0e8; font-size: 10px; }
-.app-inquiry__form { padding: 26px; background: #fff; color: var(--app-ink); }
-.app-form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; }
-.app-form-grid label { color: var(--app-ink); font-size: 10px; font-weight: 700; }
-.app-form-grid label span { color: #c14646; }
-.app-form-grid input,
-.app-form-grid select,
-.app-form-grid textarea { width: 100%; margin-top: 5px; padding: 9px 10px; border: 1px solid var(--app-line); border-radius: 2px; color: #738692; background: #f8fafb; font: inherit; font-weight: 400; resize: vertical; }
-.app-form-grid__full { grid-column: 1 / -1; }
-.app-upload { display: flex; min-height: 54px; align-items: center; gap: 10px; padding: 10px; border: 1px dashed #9eb2be; color: #718896; font-size: 10px; }
-.app-consent { display: flex; gap: 8px; margin: 14px 0; color: #5f7482; font-size: 10px; }
-.app-inquiry__form .button { width: 100%; justify-content: center; }
-.app-form-note { margin: 8px 0 0; font-size: 9px; text-align: center; }
-.app-inquiry__form--plugin { align-self: stretch; }
+/* Closing consultation */
+.app-inquiry { padding: 62px 0; background: var(--app-navy); }
+.app-contact-consultation .company-contact-consultation { align-items: stretch; }
+.app-contact-consultation .company-consultation-card,
+.app-contact-consultation .company-contact-form { color: var(--company-ink); }
 
 @media (min-width: 1600px) {
   .application-page .container-wide { width: min(100% - 96px, 1728px); }
@@ -293,7 +259,6 @@ html { overflow-x: hidden; }
   .app-process-card h3 { font-size: 19px; }
   .app-process-card strong,
   .app-process-card p { font-size: 14px; }
-  .app-solution-card dd,
   .app-case-card dd { font-size: 14px; }
   .app-scale-card { min-height: 390px; }
   .app-scale-card h3 { font-size: 19px; }
@@ -301,8 +266,6 @@ html { overflow-x: hidden; }
   .app-scale-card__content > p { font-size: 15px; }
   .app-scale-card li { font-size: 14px; }
   .app-scale-card__link { min-height: 56px; font-size: 14px; }
-  .app-solution-card { min-height: 320px; }
-  .app-solution-card h3 { font-size: 19px; }
   .app-evaluation__body { padding: 50px; }
   .app-evaluation__body > h2 { font-size: 34px; }
   .app-evaluation__body > p { font-size: 16px; }
@@ -312,10 +275,6 @@ html { overflow-x: hidden; }
   .app-properties-grid p { font-size: 13px; }
   .app-faq summary,
   .app-faq details p { font-size: 14px; }
-  .app-inquiry h2 { font-size: 38px; }
-  .app-inquiry__intro > p { font-size: 16px; }
-  .app-inquiry__intro ul { font-size: 14px; }
-  .app-form-grid label { font-size: 12px; }
 }
 
 @media (max-width: 1199px) {
@@ -335,8 +294,6 @@ html { overflow-x: hidden; }
   .app-industry-panel__facts { gap: 16px 22px; }
   .app-material-grid { grid-template-columns: repeat(4, minmax(0, 1fr)); }
   .app-process-card { min-height: 250px; padding: 20px; }
-  .app-solution-card { grid-template-columns: 1fr; }
-  .app-solution-card__image { height: 160px; }
   .app-evaluation__grid { grid-template-columns: 36% 64%; }
   .app-evaluation__body { padding: 30px; }
   .app-evaluation ol { grid-template-columns: 1fr; gap: 11px; }
@@ -344,7 +301,6 @@ html { overflow-x: hidden; }
   .app-evaluation li::after { top: 28px; left: 14px; width: 1px; height: calc(100% + 11px); transform: none; }
   .app-evaluation li h3 { margin-top: 0; }
   .app-properties-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .app-inquiry__grid { grid-template-columns: minmax(280px, .7fr) minmax(500px, 1.3fr); gap: 28px; }
 }
 
 @media (max-width: 960px) {
@@ -372,11 +328,9 @@ html { overflow-x: hidden; }
   .app-process-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .app-scale-grid { grid-template-columns: 1fr; }
   .app-scale-card { min-height: 320px; }
-  .app-solutions-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .app-evaluation__grid { grid-template-columns: 1fr; }
   .app-evaluation__image { height: 260px; }
   .app-evaluation__image img { position: static; object-position: center 24%; }
-  .app-inquiry__grid { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 767px) {
@@ -389,7 +343,7 @@ html { overflow-x: hidden; }
   .app-actions .button { justify-content: center; }
   .app-hero,
   .app-hero,
-  .app-hero__inner { height: 760px; min-height: 760px; }
+  .app-hero__inner { height: 680px; min-height: 680px; }
   .app-breadcrumb { margin-bottom: 24px; }
   .app-hero h1 { font-size: 36px; }
   .app-hero .app-hero__lead { font-size: 15px; }
@@ -417,9 +371,6 @@ html { overflow-x: hidden; }
   .app-process-card { min-height: 0; }
   .app-process-card:nth-child(n+7) { display: none; }
   .app-scale-card__body { min-height: 230px; }
-  .app-solutions-grid { grid-template-columns: 1fr; }
-  .app-solution-card { grid-template-columns: 38% 62%; min-height: 290px; }
-  .app-solution-card__image { height: auto; }
   .app-evaluation__image { height: 220px; }
   .app-evaluation__body { padding: 26px 18px; }
   .app-evaluation__body > h2 { font-size: 25px; }
@@ -431,23 +382,11 @@ html { overflow-x: hidden; }
   .app-case-carousel__control--next { right: 0; }
   .app-faq-grid { grid-template-columns: 1fr; }
   .app-inquiry { padding-block: 50px; }
-  .app-inquiry h2 { font-size: 28px; }
-  .app-inquiry__steps { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); }
-  .app-inquiry__form { padding: 18px 14px; }
-  .app-form-grid { grid-template-columns: 1fr; }
-  .app-form-grid__full { grid-column: auto; }
 }
 
 @media (max-width: 440px) {
   .app-hero h1 { font-size: 32px; }
   .app-material-grid { grid-template-columns: 1fr; }
-  .app-material-card a { display: grid; grid-template-columns: 128px 1fr; grid-template-rows: auto auto 1fr; }
+	.app-material-card { display: grid; grid-template-columns: 128px 1fr; grid-template-rows: auto auto 1fr; }
   .app-material-card__image { grid-row: 1 / 4; width: 128px; height: auto; align-self: start; aspect-ratio: 3 / 2; }
-  .app-solution-card { display: block; }
-  .app-solution-card__image { height: auto; aspect-ratio: 3 / 4; }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .app-material-card:hover .app-material-card__image::after,
-  .app-material-card:focus-within .app-material-card__image::after { animation: none; }
 }

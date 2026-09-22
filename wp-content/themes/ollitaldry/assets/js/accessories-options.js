@@ -7,9 +7,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const cards = [...browser.querySelectorAll('[data-ao-family]')];
     const status = browser.querySelector('[data-ao-filter-status]');
 
-    buttons.forEach((button) => {
-      button.addEventListener('click', () => {
-        const filter = button.dataset.aoFilter || 'all';
+    const activateFilter = (button) => {
+        const filter = button?.dataset.aoFilter || 'all';
         let visible = 0;
 
         buttons.forEach((item) => {
@@ -25,8 +24,15 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         if (status) status.textContent = `${visible} ${visible === 1 ? 'option' : 'options'} shown`;
-      });
+    };
+
+    buttons.forEach((button) => {
+      button.addEventListener('click', () => activateFilter(button));
     });
+
+    const requestedFamily = new URLSearchParams(window.location.search).get('family');
+    const requestedButton = buttons.find((button) => button.dataset.aoFilter === requestedFamily);
+    if (requestedButton) activateFilter(requestedButton);
   }
 
   const modal = document.querySelector('[data-ao-option-modal]');
@@ -157,6 +163,10 @@ document.addEventListener('DOMContentLoaded', () => {
       activeTrigger?.focus();
     }, 220);
   };
+
+  modal.querySelectorAll('[data-ao-contact-open]').forEach((button) => {
+    button.addEventListener('click', closeModal, { capture: true });
+  });
 
   document.querySelectorAll('[data-ao-option-open]').forEach((button) => {
     button.addEventListener('click', () => {

@@ -115,7 +115,8 @@
 
 	function activateInquiryType(form, type) {
 		var config = inquiryTypes[type] || inquiryTypes.recommendation;
-		var copy = document.querySelector('[data-consult-copy]');
+		var consultation = form.closest('.company-contact-consultation');
+		var copy = consultation ? consultation.querySelector('[data-consult-copy]') : null;
 		var submit = form.querySelector('[data-submit-label]');
 		var upload = form.querySelector('[data-upload-title]');
 		form.querySelectorAll('[data-inquiry-panel]').forEach(function (panel) {
@@ -381,9 +382,12 @@
 		});
 	});
 
-	var inquiryForm = document.querySelector('[data-company-contact-form]');
-	if (inquiryForm && window.ollitalCompanyPages) {
+	document.querySelectorAll('[data-company-contact-form]').forEach(function (inquiryForm) {
+		if (!window.ollitalCompanyPages) {
+			return;
+		}
 		var initialInquiryType = requestedInquiryType(inquiryForm);
+		var checkedType = inquiryForm.querySelector('input[name="product_interest"]:checked');
 		inquiryForm.querySelectorAll('input[name="product_interest"]').forEach(function (input) {
 			input.addEventListener('change', function () {
 				if (input.checked) {
@@ -394,9 +398,9 @@
 		inquiryForm.querySelectorAll('[data-advanced-toggle]').forEach(function (button) {
 			button.addEventListener('click', function () { toggleAdvanced(button); });
 		});
-		activateInquiryType(inquiryForm, initialInquiryType || inquiryForm.querySelector('input[name="product_interest"]:checked').getAttribute('data-inquiry-type'));
+		activateInquiryType(inquiryForm, initialInquiryType || (checkedType ? checkedType.getAttribute('data-inquiry-type') : 'recommendation'));
 		inquiryForm.addEventListener('submit', submitInquiry);
-	}
+	});
 
 	initLocationMap();
 	initCompanyCounters();

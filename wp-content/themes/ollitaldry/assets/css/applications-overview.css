@@ -197,7 +197,7 @@
 .applications-industry-card__media {
 	display: block;
 	width: 100%;
-	height: 150px;
+	height: 200px;
 	overflow: hidden;
 }
 
@@ -336,7 +336,7 @@
 .applications-industry-dialog li svg { width: 18px; height: 18px; flex: 0 0 18px; margin-top: 2px; color: var(--applications-teal); }
 body.applications-dialog-open { overflow: hidden; }
 
-.applications-challenges { padding-top: 18px; }
+.applications-challenges { padding-top: 18px; scroll-margin-top: calc(var(--header-height, 88px) + 12px); }
 
 .applications-challenge-grid {
 	display: grid;
@@ -418,7 +418,7 @@ body.applications-dialog-open { overflow: hidden; }
 .applications-case-grid article { position: relative; min-height: 440px; overflow: hidden; border: 1px solid var(--applications-line); border-radius: 8px; background: #fff; transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease; }
 .applications-case-grid article:hover { border-color: #91cbd3; box-shadow: 0 14px 28px rgba(4,52,75,.1); transform: translateY(-2px); }
 .applications-overview .applications-case-card__image { position: relative; display: block; width: 100%; height: 220px; overflow: hidden; background: #eef3f5; }
-.applications-case-card__image img { display: block; width: 100%; height: 100%; object-fit: contain; background: #eef3f5; transition: transform .35s ease; }
+.applications-case-card__image img { display: block; width: 100%; height: 100%; object-fit: cover; object-position: center; background: #eef3f5; transition: transform .35s ease; }
 .applications-case-card__image:hover img { transform: scale(1.035); }
 .applications-case-card__image span { position: absolute; top: 14px; left: 14px; padding: 6px 10px; border-radius: 5px; color: #fff; background: var(--applications-teal); font-size: 12px; font-weight: 800; text-transform: uppercase; }
 .applications-case-grid article > div { display: flex; min-height: 220px; padding: 22px; flex-direction: column; }

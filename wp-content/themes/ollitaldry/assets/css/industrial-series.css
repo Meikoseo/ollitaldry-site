@@ -50,6 +50,7 @@
 .industrial-architecture__copy li { display:flex; align-items:center; gap:9px; color:var(--navy-900); font-size:10px; font-weight:650; }
 .industrial-architecture__copy li span { width:22px; height:22px; flex:0 0 22px; display:grid; place-items:center; color:#fff; background:var(--industrial-teal); border-radius:50%; font-size:9px; }
 .industrial-architecture__figure { position:relative; min-width:0; min-height:470px; display:grid; place-items:center; margin:0; padding:24px 28px 76px; overflow:hidden; background:linear-gradient(180deg,#f7fafb,#fff); }
+.industrial-architecture__scroller { width:100%; min-width:0; }
 .industrial-architecture__viewport { position:relative; width:100%; aspect-ratio:1600/672; }
 .industrial-architecture__viewport > img { display:block; width:100%; height:100%; object-fit:contain; }
 .industrial-architecture__flow { position:absolute; right:28px; bottom:39px; left:28px; display:flex; justify-content:center; align-items:center; gap:15px; color:var(--muted); font-size:9px; }
@@ -232,7 +233,7 @@
 @media (max-width:720px) {
 	.industrial-series-page .container-wide { width:min(100% - 32px,1320px); }
 	.industrial-section { padding:12px 0; }
-	.industrial-hero,.industrial-hero__inner { height:620px; min-height:620px; }
+	.industrial-hero,.industrial-hero__inner { height:490px; min-height:490px; }
 	.industrial-hero::after { background:linear-gradient(90deg,rgba(2,25,41,.98),rgba(2,25,41,.82) 58%,rgba(2,25,41,.48)); }
 	.industrial-hero__image { object-position:69% center; }
 	.industrial-hero__inner { padding-top:calc(var(--header-height) + 13px); padding-bottom:30px; }
@@ -248,7 +249,8 @@
 	.industrial-facts article { padding:14px 16px; }
 	.industrial-architecture__copy { padding:22px 18px; }
 	.industrial-architecture__copy ol { grid-template-columns:1fr; }
-	.industrial-architecture__figure { min-height:0; display:block; padding:12px 0 78px; overflow-x:auto; overflow-y:hidden; scrollbar-width:thin; }
+	.industrial-architecture__figure { min-height:0; display:block; place-items:initial; padding:12px 0 78px; overflow:hidden; }
+	.industrial-architecture__scroller { overflow-x:auto; overflow-y:hidden; scrollbar-width:thin; }
 	.industrial-architecture__viewport { min-width:720px; }
 	.industrial-architecture__flow { right:12px; left:12px; flex-wrap:wrap; gap:7px; font-size:7px; }
 	.industrial-hotspot { width:20px; height:20px; font-size:7px; }
