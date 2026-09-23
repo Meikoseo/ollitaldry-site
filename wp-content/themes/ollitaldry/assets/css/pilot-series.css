@@ -53,7 +53,7 @@
 .pilot-testing__content h2 { margin:5px 0 8px; color:#fff; font-size:20px; }
 .pilot-testing__content p { margin:0 0 14px; color:rgba(255,255,255,.76); font-size:10px; line-height:1.55; }
 .pilot-actions { display:flex; flex-wrap:wrap; gap:10px; }
-.pilot-testing .button { min-height:36px; padding:8px 15px; font-size:9px; }
+.pilot-testing .button { min-height:36px; padding:8px 15px; font-size:11px; }
 .pilot-testing__benefits { align-self:center; display:grid; gap:12px; padding:20px 25px; border-left:1px solid rgba(255,255,255,.16); }
 .pilot-testing__benefits li { display:flex; align-items:center; gap:10px; color:rgba(255,255,255,.88); font-size:10px; }
 .pilot-testing__benefits .icon { width:18px; height:18px; color:#64dce1; }
@@ -113,7 +113,7 @@
 	.pilot-framed-section > h2,.pilot-data-panel > h2,.pilot-results h2,.pilot-comparison h2,.pilot-faq > h2 { font-size:21px; }
 	.pilot-audience__grid h3,.pilot-case h3 { font-size:15px; }
 	.pilot-audience__grid p,.pilot-testing__benefits li { font-size:12px; }
-	.pilot-testing__content p,.pilot-powder-grid h3,.pilot-case p,.pilot-case a { font-size:11px; }
+	.pilot-testing__content p,.pilot-powder-grid h3,.pilot-case p,.pilot-case a { font-size:13px; }
 	.pilot-highlight-table__head,.pilot-highlight-table__row > span,.pilot-spec-table table { font-size:13px; }
 	.pilot-data-note { font-size:13px; }
 	.pilot-testing__inner,.pilot-testing__media { min-height:230px; }

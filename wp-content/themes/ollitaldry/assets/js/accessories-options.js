@@ -6,10 +6,13 @@ document.addEventListener('DOMContentLoaded', () => {
     const buttons = [...filterTabs.querySelectorAll('[data-ao-filter]')];
     const cards = [...browser.querySelectorAll('[data-ao-family]')];
     const status = browser.querySelector('[data-ao-filter-status]');
+    const more = browser.querySelector('[data-ao-load-more]');
+    const pageSize = 8;
+    let visibleLimit = pageSize;
 
-    const activateFilter = (button) => {
+    const activateFilter = (button, resetLimit = true) => {
         const filter = button?.dataset.aoFilter || 'all';
-        let visible = 0;
+        if (resetLimit) visibleLimit = pageSize;
 
         buttons.forEach((item) => {
           const selected = item === button;
@@ -17,22 +20,41 @@ document.addEventListener('DOMContentLoaded', () => {
           item.setAttribute('aria-pressed', selected ? 'true' : 'false');
         });
 
-        cards.forEach((card) => {
-          const show = filter === 'all' || card.dataset.aoFamily === filter;
-          card.hidden = !show;
-          if (show) visible += 1;
-        });
+        const matches = cards.filter((card) => filter === 'all' || card.dataset.aoFamily === filter);
+        cards.forEach((card) => { card.hidden = true; });
+        matches.slice(0, visibleLimit).forEach((card) => { card.hidden = false; });
 
-        if (status) status.textContent = `${visible} ${visible === 1 ? 'option' : 'options'} shown`;
+        const visible = Math.min(visibleLimit, matches.length);
+        if (status) {
+          status.textContent = visible < matches.length
+            ? `Showing ${visible} of ${matches.length} options`
+            : `${matches.length} ${matches.length === 1 ? 'option' : 'options'} shown`;
+        }
+        if (more) {
+          more.hidden = visible >= matches.length;
+          if (more.parentElement) more.parentElement.hidden = more.hidden;
+        }
     };
+
+    if (more) {
+      more.addEventListener('click', () => {
+        const previouslyVisible = cards.filter((card) => !card.hidden);
+        const activeButton = buttons.find((button) => button.classList.contains('is-active')) || buttons[0];
+        visibleLimit += pageSize;
+        activateFilter(activeButton, false);
+        const firstNew = cards.find((card) => !card.hidden && !previouslyVisible.includes(card));
+        if (firstNew) firstNew.focus({ preventScroll: true });
+      });
+    }
 
     buttons.forEach((button) => {
       button.addEventListener('click', () => activateFilter(button));
     });
 
-    const requestedFamily = new URLSearchParams(window.location.search).get('family');
+    const requestedFamilyValue = new URLSearchParams(window.location.search).get('family');
+    const requestedFamily = requestedFamilyValue === 'recovery' ? 'extended' : requestedFamilyValue;
     const requestedButton = buttons.find((button) => button.dataset.aoFilter === requestedFamily);
-    if (requestedButton) activateFilter(requestedButton);
+    activateFilter(requestedButton || buttons.find((button) => button.classList.contains('is-active')) || buttons[0]);
   }
 
   const modal = document.querySelector('[data-ao-option-modal]');
