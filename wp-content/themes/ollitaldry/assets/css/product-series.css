@@ -84,13 +84,19 @@
 .series-results__heading { min-height: 34px; display: flex; align-items: center; justify-content: space-between; margin-bottom: 11px; }
 .series-results__heading p { margin: 0; color: var(--body); font-size: 12px; font-weight: 700; }
 .series-mobile-control { display: none; }
-.series-grid { display: grid; gap: 18px; transition: opacity .2s ease; }
+.series-grid { position: relative; display: grid; gap: 18px; isolation: isolate; }
 .series-grid--one { grid-template-columns: minmax(0,1fr); }
 .series-grid--two { grid-template-columns: repeat(2,minmax(0,1fr)); }
 .series-grid--three { grid-template-columns: repeat(3,minmax(0,1fr)); gap: 14px; }
-.series-grid.is-loading { opacity: .42; pointer-events: none; }
-.series-grid.is-loading::after { position: absolute; inset: 0; content: ""; background: linear-gradient(90deg, transparent, rgba(255,255,255,.75), transparent); animation: series-shimmer 1s infinite; }
-@keyframes series-shimmer { from { transform: translateX(-100%); } to { transform: translateX(100%); } }
+.series-grid.is-loading { overflow: hidden; pointer-events: none; }
+.series-grid.is-loading::before,
+.series-grid.is-loading::after { position: absolute; inset: 0; z-index: 5; content: ""; pointer-events: none; border-radius: 6px; }
+.series-grid.is-loading::before { background: rgba(245,248,250,.38); }
+.series-grid.is-loading::after { background: linear-gradient(105deg,rgba(255,255,255,0) 29%,rgba(255,255,255,.18) 40%,rgba(255,255,255,.7) 50%,rgba(255,255,255,.18) 60%,rgba(255,255,255,0) 71%); transform: translate3d(-100%,0,0); animation: series-shimmer .9s ease-in-out infinite; will-change: transform; }
+@keyframes series-shimmer { from { transform: translate3d(-100%,0,0); } to { transform: translate3d(100%,0,0); } }
+@media (prefers-reduced-motion: reduce) {
+  .series-grid.is-loading::after { background: rgba(255,255,255,.24); transform: none; animation: none; }
+}
 .series-product-card { min-width: 0; display: flex; flex-direction: column; overflow: hidden; background: #fff; border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 8px 24px rgba(6,38,59,.035); transition: transform .25s ease,border-color .25s ease,box-shadow .25s ease; }
 .series-product-card:hover { border-color: #afcdd0; box-shadow: 0 14px 34px rgba(6,38,59,.09); transform: translateY(-3px); }
 .series-product-card__media { position: relative; height: 300px; overflow: hidden; background: #fff; }
