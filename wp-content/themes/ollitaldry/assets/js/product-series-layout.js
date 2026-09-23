@@ -58,6 +58,67 @@
 		});
 	});
 
+	var categoryLinks = Array.prototype.slice.call(document.querySelectorAll('[data-series-category-filter]'));
+	var resultsCount = document.querySelector('[data-series-results-count]');
+	var pagination = document.querySelector('[data-pagination]');
+
+	function syncCategoryLinks(activeCategory) {
+		categoryLinks.forEach(function (link) {
+			var isActive = link.getAttribute('data-series-category') === activeCategory;
+			link.href = isActive ? link.getAttribute('data-series-all-url') : link.getAttribute('data-series-filter-url');
+			if (isActive) {
+				link.setAttribute('aria-current', 'page');
+				link.title = 'Show all spray dryers';
+			} else {
+				link.removeAttribute('aria-current');
+				link.removeAttribute('title');
+			}
+		});
+	}
+
+	function loadCategoryResults(url, updateHistory) {
+		grid.classList.add('is-loading');
+		grid.setAttribute('aria-busy', 'true');
+		return window.fetch(url, { credentials: 'same-origin' })
+			.then(function (response) {
+				if (!response.ok) throw new Error('Product filter request failed');
+				return response.text();
+			})
+			.then(function (html) {
+				var parsed = new window.DOMParser().parseFromString(html, 'text/html');
+				var nextGrid = parsed.querySelector('[data-product-grid]');
+				if (!nextGrid) throw new Error('Product filter response is incomplete');
+				grid.innerHTML = nextGrid.innerHTML;
+				var nextCount = parsed.querySelector('[data-series-results-count]');
+				if (resultsCount && nextCount) resultsCount.textContent = nextCount.textContent;
+				var nextPagination = parsed.querySelector('[data-pagination]');
+				if (pagination && nextPagination) pagination.innerHTML = nextPagination.innerHTML;
+				var nextActive = parsed.querySelector('[data-series-category-filter][aria-current]');
+				syncCategoryLinks(nextActive ? nextActive.getAttribute('data-series-category') : '');
+				if (updateHistory) window.history.pushState({ productFilter: true }, '', url);
+				setMobileFilterState(false);
+			})
+			.catch(function () {
+				window.location.assign(url);
+			})
+			.finally(function () {
+				grid.classList.remove('is-loading');
+				grid.setAttribute('aria-busy', 'false');
+			});
+	}
+
+	categoryLinks.forEach(function (link) {
+		link.addEventListener('click', function (event) {
+			if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+			event.preventDefault();
+			loadCategoryResults(link.href, true);
+		});
+	});
+
+	window.addEventListener('popstate', function () {
+		loadCategoryResults(window.location.href, false);
+	});
+
 	function syncComparisonCardHeight() {
 		var card = document.querySelector('.series-comparison-intro');
 		var tableBody = document.querySelector('.series-comparison__scroll tbody');

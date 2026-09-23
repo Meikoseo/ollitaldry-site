@@ -68,6 +68,7 @@
 .series-category-nav a:hover,.series-category-nav a[aria-current="page"] { color: #fff; background: var(--teal-700); }
 .series-category-nav a:hover .icon,.series-category-nav a[aria-current="page"] .icon { color: #fff; }
 .series-category-nav a:hover > .icon { transform: translateX(3px); }
+.series-grid.is-loading + [data-pagination] { opacity: .45; pointer-events: none; }
 .series-expansion-card { margin-top: 16px; overflow: hidden; background: #fff; border: 1px solid var(--line); border-radius: 6px; box-shadow: 0 10px 28px rgba(6,38,59,.05); }
 .series-expansion-card__header { padding: 0; }
 .series-expansion-card__header .series-expansion-toggle { width: 100%; min-height: 58px; display: flex; align-items: center; justify-content: space-between; gap: 14px; padding: 0 20px; color: var(--navy-900); background: transparent; border: 0; text-align: left; }
@@ -97,10 +98,12 @@
 .series-product-card__image-frame { position: relative; width: 100%; height: 100%; display: block; overflow: hidden; background: #fff; }
 .series-product-card__image-frame img { position: absolute; inset: 0; width: 100%; height: 100%; display: block; object-fit: contain; object-position: center; }
 .series-product-card__media img { max-width: 100%; max-height: 100%; }
-.series-product-card__tag { position: absolute; top: 13px; left: 13px; z-index: 2; max-width: calc(100% - 26px); padding: 6px 10px; color: #fff; background: var(--teal-700); border-radius: 4px; font-size: 10px; font-weight: 800; text-transform: uppercase; }
+.series-product-card__badges { position: absolute; top: 13px; left: 13px; z-index: 2; max-width: calc(100% - 26px); display: flex; align-items: center; flex-wrap: wrap; gap: 6px; }
+.series-product-card__tag { max-width: 100%; padding: 6px 10px; color: #fff; background: var(--teal-700); border-radius: 4px; font-size: 10px; font-weight: 800; line-height: 1; text-transform: uppercase; }
 .series-product-card__tag--lab { color: var(--navy-900); background: #78e0e1; }
 .series-product-card__tag--pilot { background: var(--navy-800); }
 .series-product-card__tag--industrial { background: var(--navy-950); }
+.series-product-card__tag--hot { background: #d92d20; }
 .series-product-card__placeholder { width: 86px; height: 86px; display: grid; place-items: center; color: #8bb9bd; background: #edf6f6; border-radius: 50%; }
 .series-product-card__placeholder .icon { width: 42px; height: 42px; }
 .series-product-card__body { flex: 1; display: flex; flex-direction: column; padding: 0 22px 20px; }
@@ -249,6 +252,18 @@
   .series-expansion-item small,.series-expansion-card__footer p { font-size: 11px; }
 }
 
+@media (max-width: 1599px) {
+  .series-product-card__title h3,
+  .series-product-card__description {
+    display: -webkit-box;
+    overflow: hidden;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+  }
+  .series-product-card__title h3 { max-height: 2.6em; }
+  .series-product-card__description { min-height: 3.3em; max-height: 3.3em; }
+}
+
 @media (max-width: 1180px) {
   .series-hero { min-height: 510px; }
   .series-hero__content { padding-bottom: 38px; }
@@ -366,12 +381,12 @@
   .series-grid--three .series-product-card__media { --series-image-size: min(calc(76vw - 16px),304px); height: min(76vw,320px); }
   .series-grid--three .series-product-card__body { padding: 0 22px 20px; }
   .series-grid--three .series-product-card__title h3 { font-size: 20px; }
-  .series-grid--three .series-product-card__description { min-height: 0; font-size: 13px; }
+  .series-grid--three .series-product-card__description { min-height: 3.3em; font-size: 13px; }
   .series-grid--three .series-product-card__specs { grid-template-columns: repeat(2,minmax(0,1fr)); gap: 10px 16px; }
   .series-grid--three .series-product-card__actions { align-items: center; flex-direction: row; }
   .series-grid--three .series-product-card__quote { width: auto; }
   .series-product-card__media { --series-image-size: min(calc(76vw - 16px),304px); height: min(76vw,320px); }
-  .series-product-card__description { min-height: 0; }
+  .series-product-card__description { min-height: 3.3em; }
   .series-no-results { min-height: 350px; padding: 38px 22px; }
   .series-no-results > div { width: 100%; flex-direction: column; }
   .series-no-results .button { width: 100%; }
